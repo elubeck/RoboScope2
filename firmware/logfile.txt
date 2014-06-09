@@ -1,0 +1,4564 @@
+ROBOT INITIALIZED BEEP BOOP
+readcomm, 1400624767.34: 
+readcomm, 1400624767.34: start
+
+readcomm, 1400624767.34: start
+echo: External Reset
+
+readcomm, 1400624767.35: start
+echo: External Reset
+Marlin1.0.0
+
+readcomm, 1400624767.35: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+
+readcomm, 1400624767.36: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+
+readcomm, 1400624767.36: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+
+readcomm, 1400624767.36: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+
+readcomm, 1400624767.36: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+
+readcomm, 1400624767.37: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+
+readcomm, 1400624767.37: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+
+readcomm, 1400624767.37: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+
+readcomm, 1400624767.37: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+
+readcomm, 1400624767.37: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+
+readcomm, 1400624767.38: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+
+readcomm, 1400624768.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400624769.67: 
+readcomm, 1400624769.69: 
+readcomm, 1400624770.08: 
+readcomm, 1400624770.09: 
+readcomm, 1400624770.11: 
+readcomm, 1400624770.11: X:0.00 Y:0.00 Z:60.00 E:0.00 Count X: 0.00 Y:0.00 Z:74.78
+
+readcomm, 1400624770.12: 
+readcomm, 1400624771.15: 
+readcomm, 1400624771.15: Reporting endstop status
+
+readcomm, 1400624771.15: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624771.15: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624771.15: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624771.15: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624771.19: 
+readcomm, 1400624771.19: X:0.00 Y:0.00 Z:60.00 E:1.43 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624771.21: 
+readcomm, 1400624772.23: 
+readcomm, 1400624772.24: Reporting endstop status
+
+readcomm, 1400624772.24: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624772.24: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624772.24: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624772.24: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624772.33: 
+readcomm, 1400624772.33: X:0.00 Y:0.00 Z:60.00 E:2.86 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624772.34: 
+readcomm, 1400624773.37: 
+readcomm, 1400624773.37: Reporting endstop status
+
+readcomm, 1400624773.37: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624773.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624773.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624773.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624773.4: 
+readcomm, 1400624773.4: X:0.00 Y:0.00 Z:60.00 E:4.29 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624773.41: 
+readcomm, 1400624774.44: 
+readcomm, 1400624774.44: Reporting endstop status
+
+readcomm, 1400624774.44: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624774.44: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624774.44: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624774.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624774.47: 
+readcomm, 1400624774.47: X:0.00 Y:0.00 Z:60.00 E:5.72 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624774.48: 
+readcomm, 1400624775.51: 
+readcomm, 1400624775.51: Reporting endstop status
+
+readcomm, 1400624775.51: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624775.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624775.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624775.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624775.54: 
+readcomm, 1400624775.54: X:0.00 Y:0.00 Z:60.00 E:7.15 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624775.56: 
+readcomm, 1400624776.58: 
+readcomm, 1400624776.58: Reporting endstop status
+
+readcomm, 1400624776.58: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624776.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624776.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624776.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624776.61: 
+readcomm, 1400624776.61: X:0.00 Y:0.00 Z:60.00 E:8.58 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624776.63: 
+readcomm, 1400624777.65: 
+readcomm, 1400624777.65: Reporting endstop status
+
+readcomm, 1400624777.65: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624777.66: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624777.66: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624777.66: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624777.7: 
+readcomm, 1400624777.7: X:0.00 Y:0.00 Z:60.00 E:10.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624777.71: 
+readcomm, 1400624778.74: 
+readcomm, 1400624778.74: Reporting endstop status
+
+readcomm, 1400624778.74: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624778.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624778.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624778.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624778.85: 
+readcomm, 1400624778.85: X:0.00 Y:0.00 Z:60.00 E:11.44 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624778.86: 
+readcomm, 1400624779.89: 
+readcomm, 1400624779.89: Reporting endstop status
+
+readcomm, 1400624779.89: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624779.89: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624779.89: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624779.9: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624780.0: 
+readcomm, 1400624780.0: X:0.00 Y:0.00 Z:60.00 E:12.87 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624780.01: 
+readcomm, 1400624781.04: 
+readcomm, 1400624781.04: Reporting endstop status
+
+readcomm, 1400624781.04: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624781.04: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624781.04: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624781.04: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624781.14: 
+readcomm, 1400624781.14: X:0.00 Y:0.00 Z:60.00 E:14.30 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624781.16: 
+readcomm, 1400624782.18: 
+readcomm, 1400624782.18: Reporting endstop status
+
+readcomm, 1400624782.18: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624782.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624782.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+
+readcomm, 1400624782.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+z_max: open
+
+readcomm, 1400624782.29: 
+readcomm, 1400624782.29: X:0.00 Y:0.00 Z:60.00 E:15.73 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624782.3: 
+ROBOT INITIALIZED BEEP BOOP
+readcomm, 1400624921.44: 
+readcomm, 1400624921.46: start
+
+readcomm, 1400624921.46: start
+echo: External Reset
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+
+readcomm, 1400624921.46: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+
+readcomm, 1400624921.47: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+
+readcomm, 1400624921.48: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+
+readcomm, 1400624921.48: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+
+readcomm, 1400624921.98: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400624922.48: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400624922.72: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400624923.22: 
+readcomm, 1400624923.73: 
+readcomm, 1400624923.76: 
+readcomm, 1400624923.78: 
+readcomm, 1400624924.16: 
+readcomm, 1400624924.18: 
+readcomm, 1400624924.2: 
+readcomm, 1400624924.2: X:0.00 Y:0.00 Z:60.00 E:0.00 Count X: 0.00 Y:0.00 Z:74.78
+
+readcomm, 1400624924.21: 
+readcomm, 1400624925.24: 
+readcomm, 1400624925.24: Reporting endstop status
+
+readcomm, 1400624925.24: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624925.25: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624925.25: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624925.25: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624925.27: 
+readcomm, 1400624925.27: X:0.00 Y:0.00 Z:60.00 E:1.43 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624925.29: 
+readcomm, 1400624926.3: 
+readcomm, 1400624926.31: Reporting endstop status
+
+readcomm, 1400624926.32: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624926.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624926.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624926.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624926.35: 
+readcomm, 1400624926.35: X:0.00 Y:0.00 Z:60.00 E:2.86 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624926.36: 
+readcomm, 1400624927.37: 
+readcomm, 1400624927.38: Reporting endstop status
+
+readcomm, 1400624927.39: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624927.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624927.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624927.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624927.42: 
+readcomm, 1400624927.42: X:0.00 Y:0.00 Z:60.00 E:4.29 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624927.43: 
+readcomm, 1400624928.44: 
+readcomm, 1400624928.44: Reporting endstop status
+
+readcomm, 1400624928.46: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624928.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624928.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624928.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624928.49: 
+readcomm, 1400624928.49: X:0.00 Y:0.00 Z:60.00 E:5.72 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624928.5: 
+readcomm, 1400624929.51: 
+readcomm, 1400624929.52: Reporting endstop status
+
+readcomm, 1400624929.53: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624929.53: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624929.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624929.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624929.56: 
+readcomm, 1400624929.56: X:0.00 Y:0.00 Z:60.00 E:7.15 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624929.58: 
+readcomm, 1400624930.59: 
+readcomm, 1400624930.59: Reporting endstop status
+
+readcomm, 1400624930.6: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624930.6: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624930.6: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624930.61: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624930.62: 
+readcomm, 1400624930.63: X:0.00 Y:0.00 Z:60.00 E:8.58 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624930.65: 
+readcomm, 1400624931.66: 
+readcomm, 1400624931.66: Reporting endstop status
+
+readcomm, 1400624931.67: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624931.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624931.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624931.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624931.71: 
+readcomm, 1400624931.71: X:0.00 Y:0.00 Z:60.00 E:10.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624931.72: 
+readcomm, 1400624932.73: 
+readcomm, 1400624932.74: Reporting endstop status
+
+readcomm, 1400624932.75: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624932.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624932.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400624932.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400624932.78: 
+readcomm, 1400624932.78: X:0.00 Y:0.00 Z:60.00 E:11.44 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624932.79: 
+readcomm, 1400624933.8: 
+readcomm, 1400624933.82: Reporting endstop status
+
+readcomm, 1400624933.82: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400624933.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400624933.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+
+readcomm, 1400624933.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+z_max: open
+
+readcomm, 1400624933.85: 
+readcomm, 1400624933.85: X:0.00 Y:0.00 Z:60.00 E:12.87 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400624933.87: 
+ROBOT INITIALIZED BEEP BOOP
+readcomm, 1400625401.6: 
+readcomm, 1400625401.6: start
+
+readcomm, 1400625401.61: start
+echo: External Reset
+
+readcomm, 1400625401.61: start
+echo: External Reset
+Marlin1.0.0
+
+readcomm, 1400625401.61: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+
+readcomm, 1400625401.62: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+
+readcomm, 1400625401.62: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+
+readcomm, 1400625401.62: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+
+readcomm, 1400625401.62: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+
+readcomm, 1400625401.63: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+
+readcomm, 1400625401.64: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+
+readcomm, 1400625402.9: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400625403.94: 
+readcomm, 1400625403.95: 
+readcomm, 1400625404.34: 
+readcomm, 1400625404.35: 
+readcomm, 1400625404.37: 
+readcomm, 1400625404.37: X:0.00 Y:0.00 Z:60.00 E:0.00 Count X: 0.00 Y:0.00 Z:74.77
+
+readcomm, 1400625404.38: 
+readcomm, 1400625404.71: 
+readcomm, 1400625404.71: Reporting endstop status
+
+readcomm, 1400625404.71: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625404.71: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625404.72: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625404.72: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625404.74: 
+readcomm, 1400625404.75: X:0.00 Y:0.00 Z:60.00 E:1.43 Count X: 0.00 Y:0.00 Z:65.33
+
+readcomm, 1400625404.76: 
+readcomm, 1400625405.06: 
+readcomm, 1400625405.08: Reporting endstop status
+
+readcomm, 1400625405.08: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625405.08: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625405.08: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625405.08: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625405.11: 
+readcomm, 1400625405.11: X:0.00 Y:0.00 Z:60.00 E:2.86 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625405.12: 
+readcomm, 1400625405.43: 
+readcomm, 1400625405.44: Reporting endstop status
+
+readcomm, 1400625405.45: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625405.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625405.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625405.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625405.48: 
+readcomm, 1400625405.48: X:0.00 Y:0.00 Z:60.00 E:4.29 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625405.49: 
+readcomm, 1400625405.8: 
+readcomm, 1400625405.81: Reporting endstop status
+
+readcomm, 1400625405.82: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625405.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625405.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625405.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625405.85: 
+readcomm, 1400625405.85: X:0.00 Y:0.00 Z:60.00 E:5.72 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625405.86: 
+readcomm, 1400625406.17: 
+readcomm, 1400625406.18: Reporting endstop status
+
+readcomm, 1400625406.18: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625406.18: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625406.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625406.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625406.22: 
+readcomm, 1400625406.22: X:0.00 Y:0.00 Z:60.00 E:7.15 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625406.23: 
+readcomm, 1400625406.53: 
+readcomm, 1400625406.55: Reporting endstop status
+
+readcomm, 1400625406.55: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625406.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625406.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625406.56: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625406.58: 
+readcomm, 1400625406.58: X:0.00 Y:0.00 Z:60.00 E:8.58 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625406.6: 
+readcomm, 1400625406.9: 
+readcomm, 1400625406.92: Reporting endstop status
+
+readcomm, 1400625406.92: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625406.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625406.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625406.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625406.96: 
+readcomm, 1400625406.96: X:0.00 Y:0.00 Z:60.00 E:10.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625406.97: 
+readcomm, 1400625407.28: 
+readcomm, 1400625407.3: Reporting endstop status
+
+readcomm, 1400625407.3: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625407.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625407.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+
+readcomm, 1400625407.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+z_max: open
+
+readcomm, 1400625407.34: 
+readcomm, 1400625407.34: X:0.00 Y:0.00 Z:60.00 E:11.44 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625407.35: 
+ROBOT INITIALIZED BEEP BOOP
+readcomm, 1400625433.85: 
+readcomm, 1400625433.85: start
+
+readcomm, 1400625433.85: start
+echo: External Reset
+
+readcomm, 1400625433.86: start
+echo: External Reset
+Marlin1.0.0
+
+readcomm, 1400625433.86: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+
+readcomm, 1400625433.86: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+
+readcomm, 1400625433.87: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+
+readcomm, 1400625433.87: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+
+readcomm, 1400625433.87: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+
+readcomm, 1400625433.87: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+
+readcomm, 1400625433.88: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+
+readcomm, 1400625433.88: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+
+readcomm, 1400625433.88: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+
+readcomm, 1400625433.88: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+
+readcomm, 1400625433.88: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+
+readcomm, 1400625433.89: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+
+readcomm, 1400625435.14: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400625436.18: 
+readcomm, 1400625436.2: 
+readcomm, 1400625436.58: 
+readcomm, 1400625436.6: 
+readcomm, 1400625436.62: 
+readcomm, 1400625436.62: X:0.00 Y:0.00 Z:60.00 E:0.00 Count X: 0.00 Y:0.00 Z:74.77
+
+readcomm, 1400625436.63: 
+readcomm, 1400625436.94: 
+readcomm, 1400625436.95: Reporting endstop status
+
+readcomm, 1400625436.95: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625436.95: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625436.96: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625436.96: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625436.98: 
+readcomm, 1400625436.98: X:0.00 Y:0.00 Z:60.00 E:1.43 Count X: 0.00 Y:0.00 Z:65.54
+
+readcomm, 1400625437.0: 
+readcomm, 1400625437.31: 
+readcomm, 1400625437.32: Reporting endstop status
+
+readcomm, 1400625437.32: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625437.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625437.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625437.33: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625437.35: 
+readcomm, 1400625437.35: X:0.00 Y:0.00 Z:60.00 E:2.86 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625437.37: 
+readcomm, 1400625437.67: 
+readcomm, 1400625437.69: Reporting endstop status
+
+readcomm, 1400625437.69: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625437.69: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625437.69: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625437.69: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625437.72: 
+readcomm, 1400625437.72: X:0.00 Y:0.00 Z:60.00 E:4.29 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625437.73: 
+readcomm, 1400625438.04: 
+readcomm, 1400625438.06: Reporting endstop status
+
+readcomm, 1400625438.06: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625438.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625438.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625438.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625438.09: 
+readcomm, 1400625438.09: X:0.00 Y:0.00 Z:60.00 E:5.72 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625438.1: 
+readcomm, 1400625438.41: 
+readcomm, 1400625438.42: Reporting endstop status
+
+readcomm, 1400625438.42: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625438.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625438.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625438.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625438.46: 
+readcomm, 1400625438.46: X:0.00 Y:0.00 Z:60.00 E:7.15 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625438.47: 
+readcomm, 1400625438.78: 
+readcomm, 1400625438.79: Reporting endstop status
+
+readcomm, 1400625438.79: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625438.8: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625438.8: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625438.8: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625438.83: 
+readcomm, 1400625438.83: X:0.00 Y:0.00 Z:60.00 E:8.58 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625438.84: 
+readcomm, 1400625439.14: 
+readcomm, 1400625439.16: Reporting endstop status
+
+readcomm, 1400625439.16: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625439.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625439.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625439.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625439.2: 
+readcomm, 1400625439.2: X:0.00 Y:0.00 Z:60.00 E:10.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625439.22: 
+readcomm, 1400625439.52: 
+readcomm, 1400625439.54: Reporting endstop status
+
+readcomm, 1400625439.54: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625439.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625439.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625439.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625439.58: 
+readcomm, 1400625439.58: X:0.00 Y:0.00 Z:60.00 E:11.44 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625439.59: 
+readcomm, 1400625439.9: 
+readcomm, 1400625439.91: Reporting endstop status
+
+readcomm, 1400625439.91: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625439.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625439.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625439.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625439.96: 
+readcomm, 1400625439.96: X:0.00 Y:0.00 Z:60.00 E:12.87 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625439.97: 
+readcomm, 1400625440.28: 
+readcomm, 1400625440.3: Reporting endstop status
+
+readcomm, 1400625440.3: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625440.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625440.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+
+readcomm, 1400625440.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+z_max: open
+
+readcomm, 1400625440.34: 
+readcomm, 1400625440.34: X:0.00 Y:0.00 Z:60.00 E:14.30 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625440.36: 
+readcomm, 1400625440.37: 
+readcomm, 1400625440.37: X:0.00 Y:0.00 Z:60.00 E:0.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625440.39: 
+ROBOT INITIALIZED BEEP BOOP
+readcomm, 1400625512.72: 
+readcomm, 1400625512.72: start
+
+readcomm, 1400625512.72: start
+echo: External Reset
+
+readcomm, 1400625512.73: start
+echo: External Reset
+Marlin1.0.0
+
+readcomm, 1400625512.73: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+
+readcomm, 1400625512.73: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+
+readcomm, 1400625512.74: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+
+readcomm, 1400625512.74: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+
+readcomm, 1400625512.74: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+
+readcomm, 1400625512.75: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+
+readcomm, 1400625512.76: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+
+readcomm, 1400625512.76: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+
+readcomm, 1400625512.76: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+
+readcomm, 1400625512.76: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+
+readcomm, 1400625512.76: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+
+readcomm, 1400625512.77: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+
+readcomm, 1400625514.02: start
+echo: External Reset
+Marlin1.0.0
+echo: Last Updated: May 18 2014 18:05:21 | Author: (none, default config)
+Compiled: May 18 2014
+echo: Free Memory: 13503  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:Steps per unit:
+echo:  M92 X160.48 Y160.48 Z320.48 E836.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X500.00 Y500.00 Z500.00 E25.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X100 Y100 Z900 E10000
+echo:Acceleration: S=acceleration, T=retract acceleration
+echo:  M204 S3000.00 T3000.00
+echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+echo:  M205 S0.00 T0.00 B20000 X8.00 Z20.00 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:PID settings:
+echo:   M301 P22.20 I1.08 D114.00
+
+readcomm, 1400625515.06: 
+readcomm, 1400625515.07: 
+readcomm, 1400625515.45: 
+readcomm, 1400625515.47: 
+readcomm, 1400625515.49: 
+readcomm, 1400625515.49: X:0.00 Y:0.00 Z:60.00 E:0.00 Count X: 0.00 Y:0.00 Z:74.77
+
+readcomm, 1400625515.5: 
+readcomm, 1400625515.63: 
+readcomm, 1400625515.63: Reporting endstop status
+
+readcomm, 1400625515.63: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625515.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625515.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625515.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625515.7: 
+readcomm, 1400625515.71: X:0.00 Y:0.00 Z:60.00 E:1.43 Count X: 0.00 Y:0.00 Z:69.27
+
+readcomm, 1400625515.72: 
+readcomm, 1400625515.85: 
+readcomm, 1400625515.85: Reporting endstop status
+
+readcomm, 1400625515.85: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625515.85: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625515.85: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625515.85: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625515.88: 
+readcomm, 1400625515.88: X:0.00 Y:0.00 Z:60.00 E:2.86 Count X: 0.00 Y:0.00 Z:64.96
+
+readcomm, 1400625515.89: 
+readcomm, 1400625516.02: 
+readcomm, 1400625516.02: Reporting endstop status
+
+readcomm, 1400625516.02: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.02: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.02: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.02: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.05: 
+readcomm, 1400625516.05: X:0.00 Y:0.00 Z:60.00 E:4.29 Count X: 0.00 Y:0.00 Z:60.70
+
+readcomm, 1400625516.06: 
+readcomm, 1400625516.19: 
+readcomm, 1400625516.19: Reporting endstop status
+
+readcomm, 1400625516.19: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.19: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.22: 
+readcomm, 1400625516.22: X:0.00 Y:0.00 Z:60.00 E:5.72 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625516.23: 
+readcomm, 1400625516.36: 
+readcomm, 1400625516.36: Reporting endstop status
+
+readcomm, 1400625516.36: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.39: 
+readcomm, 1400625516.39: X:0.00 Y:0.00 Z:60.00 E:7.15 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625516.4: 
+readcomm, 1400625516.53: 
+readcomm, 1400625516.53: Reporting endstop status
+
+readcomm, 1400625516.53: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.53: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.54: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.56: 
+readcomm, 1400625516.56: X:0.00 Y:0.00 Z:60.00 E:8.58 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625516.57: 
+readcomm, 1400625516.7: 
+readcomm, 1400625516.7: Reporting endstop status
+
+readcomm, 1400625516.7: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.74: 
+readcomm, 1400625516.74: X:0.00 Y:0.00 Z:60.00 E:10.01 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625516.76: 
+readcomm, 1400625516.88: 
+readcomm, 1400625516.88: Reporting endstop status
+
+readcomm, 1400625516.88: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625516.88: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625516.88: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625516.89: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625516.97: 
+readcomm, 1400625516.97: X:0.00 Y:0.00 Z:60.00 E:11.44 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625517.02: 
+readcomm, 1400625517.14: 
+readcomm, 1400625517.14: Reporting endstop status
+
+readcomm, 1400625517.14: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625517.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625517.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625517.15: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625517.21: 
+readcomm, 1400625517.21: X:0.00 Y:0.00 Z:60.00 E:12.87 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625517.23: 
+readcomm, 1400625517.35: 
+readcomm, 1400625517.35: Reporting endstop status
+
+readcomm, 1400625517.35: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625517.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625517.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625517.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625517.44: 
+readcomm, 1400625517.44: X:0.00 Y:0.00 Z:60.00 E:14.30 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625517.45: 
+readcomm, 1400625517.58: 
+readcomm, 1400625517.58: Reporting endstop status
+
+readcomm, 1400625517.58: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625517.58: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625517.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625517.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625517.67: 
+readcomm, 1400625517.67: X:0.00 Y:0.00 Z:60.00 E:15.73 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625517.68: 
+readcomm, 1400625517.81: 
+readcomm, 1400625517.81: Reporting endstop status
+
+readcomm, 1400625517.81: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625517.81: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625517.81: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625517.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625517.89: 
+readcomm, 1400625517.9: X:0.00 Y:0.00 Z:60.00 E:17.16 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625517.92: 
+readcomm, 1400625518.04: 
+readcomm, 1400625518.04: Reporting endstop status
+
+readcomm, 1400625518.05: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625518.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625518.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625518.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625518.13: 
+readcomm, 1400625518.13: X:0.00 Y:0.00 Z:60.00 E:18.59 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625518.15: 
+readcomm, 1400625518.27: 
+readcomm, 1400625518.27: Reporting endstop status
+
+readcomm, 1400625518.27: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625518.27: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625518.28: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625518.28: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625518.37: 
+readcomm, 1400625518.37: X:0.00 Y:0.00 Z:60.00 E:20.02 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625518.38: 
+readcomm, 1400625518.51: 
+readcomm, 1400625518.51: Reporting endstop status
+
+readcomm, 1400625518.51: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625518.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625518.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625518.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625518.6: 
+readcomm, 1400625518.6: X:0.00 Y:0.00 Z:60.00 E:21.45 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625518.61: 
+readcomm, 1400625518.74: 
+readcomm, 1400625518.74: Reporting endstop status
+
+readcomm, 1400625518.74: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625518.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625518.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625518.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625518.83: 
+readcomm, 1400625518.83: X:0.00 Y:0.00 Z:60.00 E:22.88 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625518.84: 
+readcomm, 1400625518.97: 
+readcomm, 1400625518.97: Reporting endstop status
+
+readcomm, 1400625518.97: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625518.97: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625518.97: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625518.97: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625519.06: 
+readcomm, 1400625519.06: X:0.00 Y:0.00 Z:60.00 E:24.31 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625519.07: 
+readcomm, 1400625519.19: 
+readcomm, 1400625519.2: Reporting endstop status
+
+readcomm, 1400625519.2: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625519.2: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625519.2: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625519.2: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625519.29: 
+readcomm, 1400625519.29: X:0.00 Y:0.00 Z:60.00 E:25.74 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625519.3: 
+readcomm, 1400625519.42: 
+readcomm, 1400625519.43: Reporting endstop status
+
+readcomm, 1400625519.43: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625519.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625519.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625519.43: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625519.52: 
+readcomm, 1400625519.52: X:0.00 Y:0.00 Z:60.00 E:27.17 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625519.53: 
+readcomm, 1400625519.66: 
+readcomm, 1400625519.66: Reporting endstop status
+
+readcomm, 1400625519.66: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625519.66: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625519.67: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625519.67: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625519.75: 
+readcomm, 1400625519.75: X:0.00 Y:0.00 Z:60.00 E:28.60 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625519.77: 
+readcomm, 1400625519.89: 
+readcomm, 1400625519.89: Reporting endstop status
+
+readcomm, 1400625519.9: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625519.9: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625519.9: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625519.9: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625519.98: 
+readcomm, 1400625519.98: X:0.00 Y:0.00 Z:60.00 E:30.03 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625520.0: 
+readcomm, 1400625520.12: 
+readcomm, 1400625520.13: Reporting endstop status
+
+readcomm, 1400625520.13: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625520.13: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625520.13: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625520.13: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625520.21: 
+readcomm, 1400625520.21: X:0.00 Y:0.00 Z:60.00 E:31.46 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625520.23: 
+readcomm, 1400625520.35: 
+readcomm, 1400625520.36: Reporting endstop status
+
+readcomm, 1400625520.36: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625520.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625520.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625520.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625520.45: 
+readcomm, 1400625520.45: X:0.00 Y:0.00 Z:60.00 E:32.89 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625520.46: 
+readcomm, 1400625520.59: 
+readcomm, 1400625520.59: Reporting endstop status
+
+readcomm, 1400625520.59: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625520.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625520.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625520.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625520.68: 
+readcomm, 1400625520.68: X:0.00 Y:0.00 Z:60.00 E:34.32 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625520.69: 
+readcomm, 1400625520.82: 
+readcomm, 1400625520.82: Reporting endstop status
+
+readcomm, 1400625520.82: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625520.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625520.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625520.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625520.91: 
+readcomm, 1400625520.91: X:0.00 Y:0.00 Z:60.00 E:35.75 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625520.93: 
+readcomm, 1400625521.05: 
+readcomm, 1400625521.05: Reporting endstop status
+
+readcomm, 1400625521.05: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625521.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625521.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625521.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625521.14: 
+readcomm, 1400625521.14: X:0.00 Y:0.00 Z:60.00 E:37.18 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625521.16: 
+readcomm, 1400625521.28: 
+readcomm, 1400625521.28: Reporting endstop status
+
+readcomm, 1400625521.29: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625521.29: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625521.29: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625521.29: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625521.38: 
+readcomm, 1400625521.38: X:0.00 Y:0.00 Z:60.00 E:38.61 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625521.39: 
+readcomm, 1400625521.51: 
+readcomm, 1400625521.52: Reporting endstop status
+
+readcomm, 1400625521.52: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625521.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625521.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625521.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625521.61: 
+readcomm, 1400625521.61: X:0.00 Y:0.00 Z:60.00 E:40.04 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625521.62: 
+readcomm, 1400625521.75: 
+readcomm, 1400625521.75: Reporting endstop status
+
+readcomm, 1400625521.75: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625521.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625521.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625521.75: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625521.84: 
+readcomm, 1400625521.84: X:0.00 Y:0.00 Z:60.00 E:41.47 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625521.85: 
+readcomm, 1400625521.98: 
+readcomm, 1400625521.98: Reporting endstop status
+
+readcomm, 1400625521.98: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625521.98: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625521.99: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625521.99: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625522.07: 
+readcomm, 1400625522.07: X:0.00 Y:0.00 Z:60.00 E:42.90 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625522.09: 
+readcomm, 1400625522.21: 
+readcomm, 1400625522.21: Reporting endstop status
+
+readcomm, 1400625522.21: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625522.22: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625522.22: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625522.22: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625522.3: 
+readcomm, 1400625522.3: X:0.00 Y:0.00 Z:60.00 E:44.33 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625522.32: 
+readcomm, 1400625522.45: 
+readcomm, 1400625522.45: Reporting endstop status
+
+readcomm, 1400625522.45: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625522.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625522.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625522.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625522.53: 
+readcomm, 1400625522.53: X:0.00 Y:0.00 Z:60.00 E:45.76 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625522.55: 
+readcomm, 1400625522.67: 
+readcomm, 1400625522.67: Reporting endstop status
+
+readcomm, 1400625522.68: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625522.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625522.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625522.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625522.77: 
+readcomm, 1400625522.77: X:0.00 Y:0.00 Z:60.00 E:47.19 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625522.78: 
+readcomm, 1400625522.9: 
+readcomm, 1400625522.9: Reporting endstop status
+
+readcomm, 1400625522.91: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625522.91: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625522.91: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625522.91: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625523.0: 
+readcomm, 1400625523.0: X:0.00 Y:0.00 Z:60.00 E:48.62 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625523.01: 
+readcomm, 1400625523.14: 
+readcomm, 1400625523.14: Reporting endstop status
+
+readcomm, 1400625523.14: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625523.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625523.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625523.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625523.23: 
+readcomm, 1400625523.23: X:0.00 Y:0.00 Z:60.00 E:50.05 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625523.24: 
+readcomm, 1400625523.37: 
+readcomm, 1400625523.37: Reporting endstop status
+
+readcomm, 1400625523.37: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625523.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625523.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625523.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625523.46: 
+readcomm, 1400625523.46: X:0.00 Y:0.00 Z:60.00 E:51.48 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625523.47: 
+readcomm, 1400625523.6: 
+readcomm, 1400625523.6: Reporting endstop status
+
+readcomm, 1400625523.6: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625523.6: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625523.61: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625523.61: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625523.69: 
+readcomm, 1400625523.69: X:0.00 Y:0.00 Z:60.00 E:52.91 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625523.7: 
+readcomm, 1400625523.83: 
+readcomm, 1400625523.83: Reporting endstop status
+
+readcomm, 1400625523.83: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625523.83: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625523.84: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625523.84: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625523.92: 
+readcomm, 1400625523.92: X:0.00 Y:0.00 Z:60.00 E:54.34 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625523.93: 
+readcomm, 1400625524.06: 
+readcomm, 1400625524.06: Reporting endstop status
+
+readcomm, 1400625524.06: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625524.06: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625524.07: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625524.07: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625524.15: 
+readcomm, 1400625524.15: X:0.00 Y:0.00 Z:60.00 E:55.77 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625524.16: 
+readcomm, 1400625524.29: 
+readcomm, 1400625524.29: Reporting endstop status
+
+readcomm, 1400625524.29: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625524.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625524.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625524.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625524.38: 
+readcomm, 1400625524.38: X:0.00 Y:0.00 Z:60.00 E:57.20 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625524.4: 
+readcomm, 1400625524.52: 
+readcomm, 1400625524.52: Reporting endstop status
+
+readcomm, 1400625524.52: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625524.53: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625524.53: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625524.53: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625524.6: 
+readcomm, 1400625524.62: X:0.00 Y:0.00 Z:60.00 E:58.63 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625524.63: 
+readcomm, 1400625524.75: 
+readcomm, 1400625524.75: Reporting endstop status
+
+readcomm, 1400625524.76: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625524.76: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625524.76: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625524.76: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625524.84: 
+readcomm, 1400625524.84: X:0.00 Y:0.00 Z:60.00 E:60.06 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625524.86: 
+readcomm, 1400625524.98: 
+readcomm, 1400625524.98: Reporting endstop status
+
+readcomm, 1400625524.99: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625524.99: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625524.99: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625524.99: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625525.08: 
+readcomm, 1400625525.08: X:0.00 Y:0.00 Z:60.00 E:61.49 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625525.09: 
+readcomm, 1400625525.22: 
+readcomm, 1400625525.22: Reporting endstop status
+
+readcomm, 1400625525.23: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625525.23: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625525.23: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625525.23: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625525.31: 
+readcomm, 1400625525.31: X:0.00 Y:0.00 Z:60.00 E:62.92 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625525.32: 
+readcomm, 1400625525.44: 
+readcomm, 1400625525.45: Reporting endstop status
+
+readcomm, 1400625525.45: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625525.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625525.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625525.45: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625525.54: 
+readcomm, 1400625525.54: X:0.00 Y:0.00 Z:60.00 E:64.35 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625525.55: 
+readcomm, 1400625525.67: 
+readcomm, 1400625525.68: Reporting endstop status
+
+readcomm, 1400625525.68: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625525.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625525.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625525.68: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625525.77: 
+readcomm, 1400625525.77: X:0.00 Y:0.00 Z:60.00 E:65.78 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625525.78: 
+readcomm, 1400625525.91: 
+readcomm, 1400625525.91: Reporting endstop status
+
+readcomm, 1400625525.91: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625525.91: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625525.91: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625525.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625526.0: 
+readcomm, 1400625526.0: X:0.00 Y:0.00 Z:60.00 E:67.21 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625526.01: 
+readcomm, 1400625526.14: 
+readcomm, 1400625526.14: Reporting endstop status
+
+readcomm, 1400625526.14: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625526.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625526.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625526.14: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625526.23: 
+readcomm, 1400625526.23: X:0.00 Y:0.00 Z:60.00 E:68.64 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625526.24: 
+readcomm, 1400625526.37: 
+readcomm, 1400625526.37: Reporting endstop status
+
+readcomm, 1400625526.37: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625526.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625526.37: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625526.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625526.46: 
+readcomm, 1400625526.46: X:0.00 Y:0.00 Z:60.00 E:70.07 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625526.47: 
+readcomm, 1400625526.6: 
+readcomm, 1400625526.6: Reporting endstop status
+
+readcomm, 1400625526.6: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625526.6: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625526.6: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625526.61: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625526.69: 
+readcomm, 1400625526.69: X:0.00 Y:0.00 Z:60.00 E:71.50 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625526.71: 
+readcomm, 1400625526.83: 
+readcomm, 1400625526.83: Reporting endstop status
+
+readcomm, 1400625526.83: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625526.83: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625526.84: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625526.84: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625526.92: 
+readcomm, 1400625526.92: X:0.00 Y:0.00 Z:60.00 E:72.93 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625526.94: 
+readcomm, 1400625527.06: 
+readcomm, 1400625527.07: Reporting endstop status
+
+readcomm, 1400625527.07: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625527.07: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625527.07: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625527.07: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625527.15: 
+readcomm, 1400625527.15: X:0.00 Y:0.00 Z:60.00 E:74.36 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625527.17: 
+readcomm, 1400625527.29: 
+readcomm, 1400625527.29: Reporting endstop status
+
+readcomm, 1400625527.3: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625527.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625527.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625527.3: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625527.38: 
+readcomm, 1400625527.38: X:0.00 Y:0.00 Z:60.00 E:75.79 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625527.4: 
+readcomm, 1400625527.52: 
+readcomm, 1400625527.52: Reporting endstop status
+
+readcomm, 1400625527.52: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625527.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625527.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625527.52: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625527.55: 
+readcomm, 1400625527.55: X:0.00 Y:0.00 Z:60.00 E:77.22 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625527.57: 
+readcomm, 1400625527.69: 
+readcomm, 1400625527.69: Reporting endstop status
+
+readcomm, 1400625527.69: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625527.69: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625527.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625527.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625527.78: 
+readcomm, 1400625527.78: X:0.00 Y:0.00 Z:60.00 E:78.65 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625527.8: 
+readcomm, 1400625527.92: 
+readcomm, 1400625527.92: Reporting endstop status
+
+readcomm, 1400625527.92: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625527.92: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625527.93: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625527.93: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625528.01: 
+readcomm, 1400625528.01: X:0.00 Y:0.00 Z:60.00 E:80.08 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625528.03: 
+readcomm, 1400625528.15: 
+readcomm, 1400625528.15: Reporting endstop status
+
+readcomm, 1400625528.16: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625528.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625528.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625528.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625528.25: 
+readcomm, 1400625528.25: X:0.00 Y:0.00 Z:60.00 E:81.51 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625528.26: 
+readcomm, 1400625528.38: 
+readcomm, 1400625528.38: Reporting endstop status
+
+readcomm, 1400625528.38: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625528.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625528.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625528.38: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625528.48: 
+readcomm, 1400625528.48: X:0.00 Y:0.00 Z:60.00 E:82.94 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625528.5: 
+readcomm, 1400625528.62: 
+readcomm, 1400625528.62: Reporting endstop status
+
+readcomm, 1400625528.62: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625528.62: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625528.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625528.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625528.71: 
+readcomm, 1400625528.71: X:0.00 Y:0.00 Z:60.00 E:84.37 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625528.73: 
+readcomm, 1400625528.86: 
+readcomm, 1400625528.86: Reporting endstop status
+
+readcomm, 1400625528.86: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625528.86: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625528.86: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625528.86: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625528.94: 
+readcomm, 1400625528.94: X:0.00 Y:0.00 Z:60.00 E:85.80 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625528.96: 
+readcomm, 1400625529.08: 
+readcomm, 1400625529.09: Reporting endstop status
+
+readcomm, 1400625529.09: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625529.09: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625529.09: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625529.09: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625529.17: 
+readcomm, 1400625529.18: X:0.00 Y:0.00 Z:60.00 E:87.23 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625529.19: 
+readcomm, 1400625529.32: 
+readcomm, 1400625529.32: Reporting endstop status
+
+readcomm, 1400625529.32: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625529.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625529.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625529.32: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625529.41: 
+readcomm, 1400625529.41: X:0.00 Y:0.00 Z:60.00 E:88.66 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625529.42: 
+readcomm, 1400625529.55: 
+readcomm, 1400625529.55: Reporting endstop status
+
+readcomm, 1400625529.55: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625529.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625529.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625529.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625529.65: 
+readcomm, 1400625529.65: X:0.00 Y:0.00 Z:60.00 E:90.09 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625529.66: 
+readcomm, 1400625529.79: 
+readcomm, 1400625529.79: Reporting endstop status
+
+readcomm, 1400625529.79: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625529.79: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625529.79: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625529.79: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625529.89: 
+readcomm, 1400625529.89: X:0.00 Y:0.00 Z:60.00 E:91.52 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625529.9: 
+readcomm, 1400625530.03: 
+readcomm, 1400625530.03: Reporting endstop status
+
+readcomm, 1400625530.03: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625530.03: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625530.03: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625530.03: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625530.12: 
+readcomm, 1400625530.12: X:0.00 Y:0.00 Z:60.00 E:92.95 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625530.14: 
+readcomm, 1400625530.26: 
+readcomm, 1400625530.26: Reporting endstop status
+
+readcomm, 1400625530.26: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625530.26: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625530.27: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625530.27: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625530.35: 
+readcomm, 1400625530.35: X:0.00 Y:0.00 Z:60.00 E:94.38 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625530.37: 
+readcomm, 1400625530.49: 
+readcomm, 1400625530.49: Reporting endstop status
+
+readcomm, 1400625530.5: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625530.5: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625530.5: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625530.5: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625530.61: 
+readcomm, 1400625530.61: X:0.00 Y:0.00 Z:60.00 E:95.81 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625530.62: 
+readcomm, 1400625530.74: 
+readcomm, 1400625530.74: Reporting endstop status
+
+readcomm, 1400625530.74: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625530.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625530.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625530.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625530.82: 
+readcomm, 1400625530.82: X:0.00 Y:0.00 Z:60.00 E:97.24 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625530.83: 
+readcomm, 1400625530.95: 
+readcomm, 1400625530.95: Reporting endstop status
+
+readcomm, 1400625530.95: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625530.95: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625530.95: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625530.95: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625530.98: 
+readcomm, 1400625530.98: X:0.00 Y:0.00 Z:60.00 E:98.67 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625531.0: 
+readcomm, 1400625531.12: 
+readcomm, 1400625531.12: Reporting endstop status
+
+readcomm, 1400625531.12: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625531.12: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625531.13: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625531.13: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625531.21: 
+readcomm, 1400625531.21: X:0.00 Y:0.00 Z:60.00 E:100.10 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625531.23: 
+readcomm, 1400625531.35: 
+readcomm, 1400625531.35: Reporting endstop status
+
+readcomm, 1400625531.35: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625531.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625531.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625531.36: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625531.44: 
+readcomm, 1400625531.44: X:0.00 Y:0.00 Z:60.00 E:101.53 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625531.45: 
+readcomm, 1400625531.58: 
+readcomm, 1400625531.58: Reporting endstop status
+
+readcomm, 1400625531.58: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625531.58: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625531.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625531.59: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625531.67: 
+readcomm, 1400625531.67: X:0.00 Y:0.00 Z:60.00 E:102.96 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625531.69: 
+readcomm, 1400625531.81: 
+readcomm, 1400625531.81: Reporting endstop status
+
+readcomm, 1400625531.82: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625531.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625531.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625531.82: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625531.91: 
+readcomm, 1400625531.91: X:0.00 Y:0.00 Z:60.00 E:104.39 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625531.92: 
+readcomm, 1400625532.05: 
+readcomm, 1400625532.05: Reporting endstop status
+
+readcomm, 1400625532.05: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625532.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625532.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625532.05: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625532.14: 
+readcomm, 1400625532.14: X:0.00 Y:0.00 Z:60.00 E:105.82 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625532.15: 
+readcomm, 1400625532.28: 
+readcomm, 1400625532.28: Reporting endstop status
+
+readcomm, 1400625532.28: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625532.28: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625532.28: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625532.28: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625532.37: 
+readcomm, 1400625532.37: X:0.00 Y:0.00 Z:60.00 E:107.25 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625532.38: 
+readcomm, 1400625532.5: 
+readcomm, 1400625532.51: Reporting endstop status
+
+readcomm, 1400625532.51: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625532.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625532.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625532.51: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625532.6: 
+readcomm, 1400625532.6: X:0.00 Y:0.00 Z:60.00 E:108.68 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625532.61: 
+readcomm, 1400625532.74: 
+readcomm, 1400625532.74: Reporting endstop status
+
+readcomm, 1400625532.74: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625532.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625532.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625532.74: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625532.83: 
+readcomm, 1400625532.83: X:0.00 Y:0.00 Z:60.00 E:110.11 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625532.85: 
+readcomm, 1400625532.97: 
+readcomm, 1400625532.97: Reporting endstop status
+
+readcomm, 1400625532.98: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625532.98: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625532.98: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625532.98: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625533.07: 
+readcomm, 1400625533.07: X:0.00 Y:0.00 Z:60.00 E:111.54 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625533.08: 
+readcomm, 1400625533.2: 
+readcomm, 1400625533.21: Reporting endstop status
+
+readcomm, 1400625533.21: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625533.21: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625533.21: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625533.21: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625533.3: 
+readcomm, 1400625533.3: X:0.00 Y:0.00 Z:60.00 E:112.97 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625533.31: 
+readcomm, 1400625533.54: 
+readcomm, 1400625533.55: Reporting endstop status
+
+readcomm, 1400625533.55: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625533.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625533.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625533.55: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625533.64: 
+readcomm, 1400625533.64: X:0.00 Y:0.00 Z:60.00 E:114.40 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625533.65: 
+readcomm, 1400625533.78: 
+readcomm, 1400625533.78: Reporting endstop status
+
+readcomm, 1400625533.78: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625533.78: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625533.79: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625533.79: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625533.87: 
+readcomm, 1400625533.87: X:0.00 Y:0.00 Z:60.00 E:115.83 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625533.88: 
+readcomm, 1400625534.01: 
+readcomm, 1400625534.01: Reporting endstop status
+
+readcomm, 1400625534.01: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625534.01: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625534.02: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625534.02: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625534.1: 
+readcomm, 1400625534.1: X:0.00 Y:0.00 Z:60.00 E:117.26 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625534.12: 
+readcomm, 1400625534.24: 
+readcomm, 1400625534.24: Reporting endstop status
+
+readcomm, 1400625534.24: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625534.24: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625534.24: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625534.25: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625534.32: 
+readcomm, 1400625534.32: X:0.00 Y:0.00 Z:60.00 E:118.69 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625534.33: 
+readcomm, 1400625534.46: 
+readcomm, 1400625534.46: Reporting endstop status
+
+readcomm, 1400625534.46: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625534.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625534.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625534.46: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625534.55: 
+readcomm, 1400625534.55: X:0.00 Y:0.00 Z:60.00 E:120.12 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625534.57: 
+readcomm, 1400625534.69: 
+readcomm, 1400625534.69: Reporting endstop status
+
+readcomm, 1400625534.7: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625534.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625534.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625534.7: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625534.79: 
+readcomm, 1400625534.79: X:0.00 Y:0.00 Z:60.00 E:121.55 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625534.8: 
+readcomm, 1400625534.92: 
+readcomm, 1400625534.93: Reporting endstop status
+
+readcomm, 1400625534.93: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625534.93: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625534.93: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625534.93: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625535.02: 
+readcomm, 1400625535.02: X:0.00 Y:0.00 Z:60.00 E:122.98 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.03: 
+readcomm, 1400625535.16: 
+readcomm, 1400625535.16: Reporting endstop status
+
+readcomm, 1400625535.16: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625535.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625535.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625535.16: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625535.25: 
+readcomm, 1400625535.25: X:0.00 Y:0.00 Z:60.00 E:124.41 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.26: 
+readcomm, 1400625535.38: 
+readcomm, 1400625535.39: Reporting endstop status
+
+readcomm, 1400625535.39: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625535.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625535.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625535.39: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625535.46: 
+readcomm, 1400625535.48: X:0.00 Y:0.00 Z:60.00 E:125.84 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.49: 
+readcomm, 1400625535.62: 
+readcomm, 1400625535.62: Reporting endstop status
+
+readcomm, 1400625535.62: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625535.62: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625535.62: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+
+readcomm, 1400625535.63: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: open
+z_max: open
+
+readcomm, 1400625535.71: 
+readcomm, 1400625535.71: X:0.00 Y:0.00 Z:60.00 E:127.27 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.72: 
+readcomm, 1400625535.85: 
+readcomm, 1400625535.85: Reporting endstop status
+
+readcomm, 1400625535.85: Reporting endstop status
+x_min: TRIGGERED
+
+readcomm, 1400625535.85: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+
+readcomm, 1400625535.86: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+
+readcomm, 1400625535.86: Reporting endstop status
+x_min: TRIGGERED
+y_min: TRIGGERED
+z_min: TRIGGERED
+z_max: open
+
+readcomm, 1400625535.94: 
+readcomm, 1400625535.94: X:0.00 Y:0.00 Z:60.00 E:128.70 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.95: 
+readcomm, 1400625535.98: 
+readcomm, 1400625535.98: X:0.00 Y:0.00 Z:60.00 E:114.41 Count X: 0.00 Y:0.00 Z:60.00
+
+readcomm, 1400625535.99: 
