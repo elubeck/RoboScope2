@@ -3,18 +3,7 @@ __author__ = 'Me'
 from microscope import Microscope
 from microscope import *
 from robotHighlevel import *
-from datetime import datetime
-
-
-scope.aspirate(h20, 1, vol, 100, wait=10)
-scope.dispense(well, 0, vol, expell=True, wait=20,)
-scope.robot.gotoTop(scope.layout[1])
-scope.sync()
-scope.takePhoto()
-scope.aspirate(well, 0, 600, 0, wait=30,)
-scope.moveStage(well)
-scope.robotQuickWash()
-scope.wait(3)
+from datetime import datetime, timedelta
 
 
 def frange(start, end=None, inc=None):
@@ -41,13 +30,76 @@ def frange(start, end=None, inc=None):
             break
         yield next
 
-class Well(Object):
+import time
+from os import path
+import sys
+import threading
+import Queue
+
+class Manager(threading.Thread):
+
+    def main(self, well_names, hybridizations=['i1', 'i1'],
+              activities =  ['hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image']
+              ):
+        """
+        This is a linear event loop for the program.  It'll waste lots of time, but it's an initial demo of the software.
+        :param well_names:
+        :param hybridizations:
+        :param activities:
+        :return:
+        """
+        wells = []
+        for well in well_names:
+            save_path = path.join(self.home_dir, well)
+            w = Well(self.controllers, well, 700, outdir=save_path)
+            w.done_time = datetime.now()
+
+        for hyb in hybridizations:
+            for activity in activities:
+                for well in wells:
+                    while well.done_time > datetime.now():
+                        time.sleep(10)
+                    if activity == 'hyb':
+                        well.done_time = well.incubate(hyb, 120)
+                    if activity == 'rinse':
+                        well.wash(ssc_vial, 2)
+                        well.done_time = datetime.now()
+                    if activity == 'stringent wash':
+                        well.done_time = well.incubate(formamide_wash, 30)
+                    if activity == 'wash':
+                        well.wash(ssc_vial, 5)
+                    if activity == 'antibleach':
+                        well.done_time = well.incubate(antibleach_tube, 5)
+                    if activity == 'image':
+                        well.image()
+                        well.done_time = datetime.now()
+
+    def run(self, well_names, hybridizations, activities):
+        try:
+            self.main(well_names, hybridizations, activities)
+        except Exception:
+            self.bucket.put(sys.exc_info())
+
+    def __init__(self, controllers, home_dir, bucket):
+        threading.Thread.__init__(self)
+        self.controllers = controllers
+        self.home_dir = home_dir
+        self.bucket = bucket
+
+
+
+class Well(object):
 
     def log(self, string):
         self.history.append(str(datetime.now()) + "\t%s" %string)
 
-    def incubate(self, fluid, time):
-        pass
+    def incubate(self, fluid, time, vol=200, fill_wait=60, dispense_wait=60):
+        self.aspirate(wait=30)
+        self.fill(fluid, vol/2, fill_wait=fill_wait, dispense_wait=dispense_wait)
+        self.aspirate(wait=30)
+        self.fill(fluid, vol, fill_wait=fill_wait, dispense_wait=dispense_wait)
+        td = timedelta(minutes=time)
+        return datetime.now() + td
 
     def wash(self, fluid, n_times=1):
         for time in range(n_times):
@@ -86,6 +138,10 @@ class Well(Object):
         self.vol = volume
 
     def image(self,):
+        """
+        Images all positions in self.positions with settings in self.channels
+        :return:
+        """
         if self.acq is None:
             z_max = max([position['z max'] - position['z min'] for position in self.positions])
             self.acq = self.gui.openAcquisition(self.position, self.outdir, 500, len(self.channels), z_max/self.z_step,
@@ -124,59 +180,26 @@ class Well(Object):
 
 
 
-# try:
-	# core.unloadDevice("Robot")
-	# pass
-# except:
-	# pass
+def main(controllers, home_dir):
+    bucket = Queue.Queue()
+    thread_obj = Manager(controllers, home_dir, bucket)
+    thread_obj.start()
 
-# scope = Microscope(gui, core,
-                    # plate_layout=[Microwell([11.3, 10.7,
-                # 42.832, 44.584,
-                # 24, 4,
-                # 4, 2,
-                # 10, 0]), Microwell(PLATEDEF_VIALRACK)],
-                   # #offset=[10.4, 25.325, 13.3, 0]
-                   # )
-# scope.needleCal()
-# scope.aspirate('A1', 0, 10, 0)
+    while True:
+        try:
+            exc = bucket.get(block=False)
+        except Queue.Empty:
+            pass
+        else:
+            exc_type, exc_obj, exc_trace = exc
+            # deal with the exception
+            print exc_type, exc_obj
+            print exc_trace
 
-from threading import Thread, InterruptedException
-
-class prog(Thread):
-    def run(self):
-        for i in range(5):
-            print("Cycle %s" %i)
-            well = 'B4'
-            h20 = 'D5'
-            fluor = 'E5'
-            n_washes = 5
-            vol = 400
-            scope.moveStage(well)
-            scope.sync()
-            scope.takePhoto()
-            scope.sync()
-            scope.aspirate(fluor, 1, 300, 300, wait=60)
-            scope.dispense(well, 0, 300, expell=True, wait=30,)
-            scope.robot.gotoTop(scope.layout[1])
-            scope.sync()
-            scope.takePhoto()
-            scope.sync()
-            scope.aspirate(well, 0, 600, 0, wait=30)
-            scope.robotQuickWash()
-            #scope.wait(6)
-
-            for wash in range(n_washes):
-                scope.aspirate(h20, 1, vol, 100, wait=10)
-                scope.dispense(well, 0, vol, expell=True, wait=20,)
-                scope.robot.gotoTop(scope.layout[1])
-                scope.sync()
-                scope.takePhoto()
-                scope.aspirate(well, 0, 600, 0, wait=30,)
-                scope.moveStage(well)
-                scope.robotQuickWash()
-                scope.wait(3)
-            scope.wait(30*60)
-
-foo = prog()
-foo.start()
+        thread_obj.join(0.1)
+        if thread_obj.isAlive():
+            continue
+        else:
+            break
+if __name__ == "__main__":
+    main(controllers, home_dir)
