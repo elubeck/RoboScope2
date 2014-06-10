@@ -1,10 +1,11 @@
 __author__ = 'Me'
 
-from microscope import Microscope
-from microscope import *
-from robotHighlevel import *
 from datetime import datetime, timedelta
-
+import time
+from os import path
+import sys
+import threading
+import Queue
 
 def frange(start, end=None, inc=None):
     """
@@ -15,76 +16,79 @@ def frange(start, end=None, inc=None):
     :param inc: increment
     :return: yields values
     """
-    if end == None:
+    if end is None:
         end = start + 0.0
         start = 0.0
 
-    if inc == None:
+    if inc is None:
         inc = 1.0
 
+    val = start
     while True:
-        next = start + len(L) * inc
-        if inc > 0 and next >= end:
+        val +=  inc
+        if inc > 0 and val >= end:
             break
-        elif inc < 0 and next <= end:
+        elif inc < 0 and val <= end:
             break
-        yield next
+        yield val
 
-import time
-from os import path
-import sys
-import threading
-import Queue
 
 class Manager(threading.Thread):
 
-    def main(self, well_names, hybridizations=['i1', 'i1'],
-              activities =  ['hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image']
-              ):
+    def main(self):
         """
         This is a linear event loop for the program.  It'll waste lots of time, but it's an initial demo of the software.
-        :param well_names:
-        :param hybridizations:
-        :param activities:
         :return:
         """
         wells = []
-        for well in well_names:
+        for well in self.well_names:
             save_path = path.join(self.home_dir, well)
             w = Well(self.controllers, well, 700, outdir=save_path)
             w.done_time = datetime.now()
 
-        for hyb in hybridizations:
-            for activity in activities:
+        for hyb, hyb_tube in self.hybridizations.iteritems():
+            for activity in self.activities:
                 for well in wells:
                     while well.done_time > datetime.now():
                         time.sleep(10)
                     if activity == 'hyb':
-                        well.done_time = well.incubate(hyb, 120)
+                        well.done_time = well.incubate(hyb_tube, 120)
                     if activity == 'rinse':
-                        well.wash(ssc_vial, 2)
+                        well.wash(self.ssc_vial, 2)
                         well.done_time = datetime.now()
                     if activity == 'stringent wash':
-                        well.done_time = well.incubate(formamide_wash, 30)
+                        well.done_time = well.incubate(self.formamide_vial, 30)
                     if activity == 'wash':
-                        well.wash(ssc_vial, 5)
+                        well.wash(self.ssc_vial, 5)
                     if activity == 'antibleach':
-                        well.done_time = well.incubate(antibleach_tube, 5)
+                        well.done_time = well.incubate(self.antibleach_vial, 5)
                     if activity == 'image':
                         well.image()
                         well.done_time = datetime.now()
+                    if activity == 'strip':
+                        well.done_time = well.incubate(self.enzyme_vial, 60)
 
-    def run(self, well_names, hybridizations, activities):
+    def run(self, ):
         try:
-            self.main(well_names, hybridizations, activities)
+            self.main()
         except Exception:
             self.bucket.put(sys.exc_info())
 
-    def __init__(self, controllers, home_dir, bucket):
+    def __init__(self, controllers, home_dir, bucket, well_names, hybridizations=(('i1', 'A1'), ('i1', 'A1')),
+              activities =  ('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
+              formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5'):
         threading.Thread.__init__(self)
         self.controllers = controllers
         self.home_dir = home_dir
         self.bucket = bucket
+        self.well_names = well_names
+        self.hybridizations = dict(hybridizations)
+        self.activities = activities
+        self.ssc_vial = ssc_vial
+        self.formamide_vial = formamide_vial
+        self.antibleach_vial = antibleach_vial
+        self.enzyme_vial = enzyme_vial
+
 
 
 
@@ -93,16 +97,16 @@ class Well(object):
     def log(self, string):
         self.history.append(str(datetime.now()) + "\t%s" %string)
 
-    def incubate(self, fluid, time, vol=200, fill_wait=60, dispense_wait=60):
+    def incubate(self, fluid, minutes, vol=200, fill_wait=60, dispense_wait=60):
         self.aspirate(wait=30)
         self.fill(fluid, vol/2, fill_wait=fill_wait, dispense_wait=dispense_wait)
         self.aspirate(wait=30)
         self.fill(fluid, vol, fill_wait=fill_wait, dispense_wait=dispense_wait)
-        td = timedelta(minutes=time)
+        td = timedelta(minutes=minutes)
         return datetime.now() + td
 
     def wash(self, fluid, n_times=1):
-        for time in range(n_times):
+        for t in range(n_times):
             self.aspirate(wait=30)
             self.fill(fluid, self.max_vol*0.7)
             self.log("Done Wash ")
@@ -110,7 +114,7 @@ class Well(object):
     def aspirate(self, dead_volume=0, wait=5):
         """
         For emptying a well.  As solution will almost always be washed away don't pull up any deadvolume
-        :param deadvolume: Amount of deadvolume to pull at end of syringe
+        :param dead_volume: Amount of deadvolume to pull at end of syringe
         :param wait: Time to wait after pipetting
         :return:
         """
@@ -146,7 +150,6 @@ class Well(object):
             z_max = max([position['z max'] - position['z min'] for position in self.positions])
             self.acq = self.gui.openAcquisition(self.position, self.outdir, 500, len(self.channels), z_max/self.z_step,
             len(self.positions), True, True)
-            self.frame = 0
         for pn, position in enumerate(self.positions):
             if self.scope.at_bottom:
                 raise Exception("Stage can't move while robot at bottom.")
@@ -155,8 +158,8 @@ class Well(object):
             self.scope.core.waitForDevice("XYStage") #something like this, to prevent errors
             self.scope.core.waitForDevice("ManualFocus")
             for ch, exp_time in self.channels.iteritems():
-                self.core.setConfig("Filter", ch)
-                self.core.setExposure(exp_time)
+                self.scope.core.setConfig("Filter", ch)
+                self.scope.core.setExposure(exp_time)
                 for n, z in enumerate(frange(position['z min'], position['z max'], self.z_step)):
                     self.scope.gui.setStagePosition(z)
                     self.scope.core.waitForDevice("ManualFocus")
@@ -164,7 +167,7 @@ class Well(object):
         self.frame += 1
 
 
-    def __init__(self, controllers, position, max_vol, outdir, channels={"630": 500, "532": 500, "390": 500}, z_step=0.5):
+    def __init__(self, controllers, position, max_vol, outdir, channels=(("630", 500), ("532", 500), ("390", 500)), z_step=0.5):
         self.scope = controllers['scope']
         self.gui = controllers['gui']
         self.position = position
@@ -172,17 +175,21 @@ class Well(object):
         self.max_vol = max_vol
         self.vol = 0
         self.history = []
-        self.channels = channels
+        self.channels = dict(channels)
         self.acq = None
+        self.frame = 0
         self.z_step = z_step
         self.outdir = outdir
 
 
 
 
-def main(controllers, home_dir):
+def main(controllers, home_dir, well_names, hybridizations=(('i1', 'A1'), ('i1', 'A1')),
+        activities =  ('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
+        formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5'):
     bucket = Queue.Queue()
-    thread_obj = Manager(controllers, home_dir, bucket)
+    thread_obj = Manager(controllers, home_dir, bucket, well_names, hybridizations, activities, ssc_vial,
+                        formamide_vial, antibleach_vial, enzyme_vial)
     thread_obj.start()
 
     while True:
@@ -202,4 +209,31 @@ def main(controllers, home_dir):
         else:
             break
 if __name__ == "__main__":
-    main(controllers, home_dir)
+    home_dir = sys.currentWorkingDir()
+
+    try:
+        core.unloadDevice("Robot")
+        pass
+    except:
+        pass
+    from microscope import Microscope
+    from robotHighlevel import *
+
+    try:
+        scope = Microscope(gui, core,
+                           plate_layout=[Microwell([11.3, 10.7,
+                                                    42.832, 44.584,
+                                                    24, 4,
+                                                    4, 2,
+                                                    10, 0]),
+                                         Microwell(PLATEDEF_VIALRACK)],
+                           # #offset=[10.4, 25.325, 13.3, 0]
+        )
+        scope.needleCal()
+    except:
+        raise Exception("Can't initialize microscope")
+    controllers = {'scope': scope, 'gui': gui, 'core': core}
+    well_names = 'A1'
+    main(controllers, home_dir, well_names, hybridizations=(('i1', 'A1'), ('i1', 'A1')),
+         activities =  ('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
+         formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5')

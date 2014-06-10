@@ -140,7 +140,7 @@ class Robot:
         self.gotoWell(washwells,wellA)
         self.gotoBottom(washwells)
         self.wait(10)
-        if(wellB != None):
+        if(wellB is not None):
             self.gotoWell(washwells,wellB)
             self.gotoBottom(washwells)
             self.wait(5)
@@ -166,7 +166,7 @@ class Robot:
         coords = coords[:3] #dreymark
         dimorder = [" X{0:.4f}"," Y{0:.4f}"," Z{0:.4f}"," E{0:.4f}"," F{}"]
         for el in range(len(coords)):
-            if coords[el] != None:
+            if coords[el] is not None:
                 if(coords[el]<0.00001):
                     coords[el] = 0
                 xyz+=dimorder[el].format(float(coords[el]))

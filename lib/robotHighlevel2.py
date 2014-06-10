@@ -58,11 +58,11 @@ class Robot:
         self.stageposx = 0.0
         self.stageposy = 0.0
         self.uLpermm = 1.0080
-        if(home):
+        if home:
             self.homeNow(syringe=syringe)
         
     def homeNow(self,syringe = True):
-        if(syringe):
+        if syringe:
             self.homeSyringe()
         self.arbGcode("G28 Z0")
         self.arbGcode("G1 Z65")
@@ -80,20 +80,20 @@ class Robot:
     def gotoWell(self,welldef,well,feedrate=1000):
         """tells the robot to move to the top coordinate of
         a well"""
-        curpos = self.getCoords();
-        welldef.setOffset([self.staticOffset[0]+self.stageposx, \
+        curpos = self.getCoords()
+        welldef.setOffset([self.staticOffset[0]+self.stageposx,
                            self.staticOffset[1]+self.stageposy])
         XYgoal = welldef.wellPos(well)
         Zgoal = welldef.zposTOP
 
-        if(curpos[2] < Zgoal):
+        if curpos[2] < Zgoal:
             self.makeMove([None,None,Zgoal,None],feedrate)
         self.makeMove([XYgoal[0],XYgoal[1],None,None],feedrate)
         self.makeMove([None,None,Zgoal,None],feedrate)
         
     def aspirate(self,amount_uL,feedrate= 300,override=False):
         """how many microliters to suck in"""
-        if(self.syringeVolume == -1 and (not override)):
+        if self.syringeVolume == -1 and (not override):
             raise Exception("Syringe not homed!")
         self.setSyringeVolume(self.syringeVolume+amount_uL)
         
@@ -104,9 +104,9 @@ class Robot:
     
     def dispense(self,amount_uL,feedrate=300,override=False):
         """how many microliters to spit out"""
-        if(self.syringeVolume == -1 and (not override)):
+        if self.syringeVolume == -1 and (not override):
             raise Exception("Syringe not homed!")
-        if(amount_uL > self.syringeVolume and (not override)):
+        if amount_uL > self.syringeVolume and (not override):
             amount_uL = self.syringeVolume
         self.aspirate(-amount_uL,feedrate,override)
         
@@ -115,7 +115,7 @@ class Robot:
         #aspirate(-self.syringeVolume,feedrate)
         
     def setSyringeVolume(self,volume,feedrate=2400,override = False):
-        if(volume < 0 and (not override)):
+        if volume < 0 and (not override):
             volume = 0
         else:
             amount_mm = volume/self.uLpermm
@@ -136,7 +136,7 @@ class Robot:
         self.gotoBottom(washwells)
         self.emptySyringe()
         self.aspirate(100)
-        if(wellB != None):
+        if wellB is not None:
             self.gotoWell(washwells,wellB)
             self.gotoBottom(washwells)
             self.wait(3)
@@ -154,11 +154,11 @@ class Robot:
         xyz = ""
         dimorder = [" X{0:.4f}"," Y{0:.4f}"," Z{0:.4f}"," E{0:.4f}"," F{}"]
         for el in range(len(coords)):
-            if coords[el] != None:
-                if(coords[el]<0.00001):
+            if coords[el] is not None:
+                if coords[el]<0.00001:
                     coords[el] = 0
                 xyz+=dimorder[el].format(float(coords[el]))
-        if(feedrate != 0):
+        if feedrate != 0:
             xyz+=dimorder[4].format(feedrate)
         gcode = gcode.format(xyz)
         #print "SENDING: {}".format(gcode)
@@ -212,7 +212,7 @@ class Robot:
         espl = ends.split("\n")
         espl = espl[1:]
         for eind in range(len(espl)):
-            if("TRIGGERED" in espl[eind]):
+            if "TRIGGERED" in espl[eind]:
                 outlist[eind] = 1
         #print "endstops!"
         #print outlist
@@ -263,9 +263,10 @@ class Robot:
         sc = stagecoords
         self.staticOffset = (cp[0]+cm[0]-sc[0],cm[1]+cp[1]-sc[1])
         
-    def endStep(self, startcoords, endcoords,step, endstopcheck=[0,0,1,0],feed = 300,wait = 0.1):
+    def endStep(self, startcoords, endcoords, step, endstopcheck=None, feed=300, wait=0.1):
         """goes from the startcoords to the endcoords one step at a time, checking
         endstop hit along the way"""
+        if not endstopcheck: endstopcheck = [0, 0, 1, 0]
         movelist = self.intermediatePoints(startcoords,endcoords,step)
         curpos = startcoords
         prevpos = startcoords
@@ -279,13 +280,13 @@ class Robot:
             curpos = dc(move)
             endstop = self.hitEndstops()
             for end in range(len(endstopcheck)):
-                if(endstopcheck[end] and endstop[end]):
+                if endstopcheck[end] and endstop[end]:
                     hitsomething=True
                     print "we hit something!"
                     break
-            if(hitsomething):
+            if hitsomething:
                 break
-        if(not hitsomething): #we didnt hit anything!!
+        if not hitsomething: #we didnt hit anything!!
             return False, endcoords
         
         #now, move back until we no longer touch that thing
@@ -300,12 +301,12 @@ class Robot:
             notouch = dc(move)
             endstop = self.hitEndstops()
             for end in range(len(endstopcheck)):
-                if(endstopcheck[end] and (not endstop[end])):
+                if endstopcheck[end] and (not endstop[end]):
                     hitsomething = False
                     break
-            if(not hitsomething):
+            if not hitsomething:
                 countoff-=1 #this means we move a set amount of steps farther than the edge
-                if(countoff <= 0):
+                if countoff <= 0:
                     break
         #move again, with a smaller step
         lastmovelist = self.intermediatePoints(notouch,endcoords,0.05)
@@ -319,11 +320,11 @@ class Robot:
             curpos = dc(move)
             endstop = self.hitEndstops()
             for end in range(len(endstopcheck)):
-                if(endstopcheck[end] and endstop[end]):
+                if endstopcheck[end] and endstop[end]:
                     print "HIT!"
                     hitsomething = True
                     break
-            if(hitsomething):
+            if hitsomething:
                 break
                 
         actualcoords = self.getCoords()
@@ -387,8 +388,9 @@ class Robot:
         z=r*m.cos(elev)
         return x,y,z
 
-    def scanLine(self, scanPoints,scanDelta,feed=300,step=0.1,wait=0.1,endstopcheck = [0,0,1,0]):
+    def scanLine(self, scanPoints, scanDelta, feed=300, step=0.1, wait=0.1, endstopcheck=None):
         """goes along a set of points, scanning with the endstep function"""
+        if not endstopcheck: endstopcheck = [0, 0, 1, 0]
         retpoints = []
         for pind in range(len(scanPoints)):
             scanpoint = scanPoints[pind]
@@ -436,7 +438,7 @@ class Microwell:
         alph = 'abcdefghijklmnopqrstuvwxyz'
         yind = alph.index(well[0].lower())
         xind = int(well[1:])-1
-        if(microscope):
+        if microscope:
             xval = self.xpos+xind*self.xspace
             yval = self.ypos-yind*self.yspace
             #xval = xval*1000
@@ -445,17 +447,17 @@ class Microwell:
             xval = self.offsetX-self.xpos-xind*self.xspace
             yval = self.offsetY-self.ypos+yind*self.yspace
         
-        return (xval,yval)
+        return xval,yval
     
     def setOffset(self,offset):
         self.offsetX = offset[0]
         self.offsetY = offset[1]
     
-PLATEDEF_384WELL=[4.5,4.5,\ #spacing between wells; x and y
-                  8.5114,72.69825,20, 8.5,\ #position of A1, X, Y, top and bottom
+PLATEDEF_384WELL=[4.5,4.5,#spacing between wells; x and y
+                  8.5114,72.69825,20, 8.5, #position of A1, X, Y, top and bottom
                   24,16,13,0] #number of wells in X and Y
-PLATEDEF_VIALRACK =[13.94,16.09,\
-                    114.15,38.8,49,30,\
+PLATEDEF_VIALRACK =[13.94,16.09,
+                    114.15,38.8,49,30,
                     4,2,30,0]
 PLATEDEF_VIALRACK =[13.94,16.09,114.15,38.8,49,30,4,2,30,0]
 
