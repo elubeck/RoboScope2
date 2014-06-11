@@ -55,12 +55,11 @@ class Robot:
         self.modz = 0.0
         self.stageposx = 0.0
         self.stageposy = 0.0
-        # self.uLpermm = 1.0080
-        self.uLpermm = 1.817
+        self.uLpermm = 1.8182
         self.at_bottom = False
         if(home):
             self.homeNow(syringe=syringe)
-        
+
     def homeNow(self,syringe = True):
         if(syringe):
             self.homeSyringe()
@@ -119,6 +118,7 @@ class Robot:
             volume = 0
         else:
             amount_mm = volume/self.uLpermm
+            print(volume, amount_mm, self.ulpermm)
             self.arbGcode("G1 E{0:.5f} F{1}".format(-amount_mm,feedrate))#dreymark
             self.syringeVolume = volume
                     
@@ -474,7 +474,7 @@ PLATEDEF_VIALRACK =[13.94,16.09,
 
 PLATEDEF_8WELL=[11.3, 10.7,
                 42.832, 44.584,
-                24, 7,
+                24, 4,
                 4, 2, 
                 15, 0]
 #roboffset = [4.98,87.055,2.7,0]
