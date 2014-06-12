@@ -18,13 +18,16 @@ class Microscope:
         self.calpos = calpos
         self.pipetSpeed = pipetSpeed
         self.robot = rob.Robot(robcom,115200,mmcore=self.core,syringe=syringe) #initializes the robot and homes it.
-
+        self.gui.setStagePosition(0.1)
+        self.core.waitForDevice("ManualFocus")
         self.setStageXY(homepos) #moves the stage to the home position
         self.layout= plate_layout
         self.framecount = 0
         self.acqname = acqname
         self.setRobotStaticOffset(offset)
-        
+
+
+
     def takePhoto(self):
         """takes a photo"""
         self.gui.snapAndAddImage(self.acqname,self.framecount,0,0,0)
@@ -119,10 +122,11 @@ class Microscope:
             
     def sync(self):
         self.core.waitForDevice("XYStage")
+        self.core.waitForDevice("ManualFocus")
         self.robot.sync()
         
     def needleCal(self):
-        self.gui.setStagePosition(0)
+        self.gui.setStagePosition(0.1)
         self.core.waitForDevice("ManualFocus")
         self.setStageXY(self.homepos)
         self.sync()

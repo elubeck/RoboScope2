@@ -118,7 +118,7 @@ class Robot:
             volume = 0
         else:
             amount_mm = volume/self.uLpermm
-            print(volume, amount_mm, self.ulpermm)
+            print(volume, amount_mm, self.uLpermm)
             self.arbGcode("G1 E{0:.5f} F{1}".format(-amount_mm,feedrate))#dreymark
             self.syringeVolume = volume
                     

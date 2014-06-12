@@ -45,7 +45,7 @@ class Manager(threading.Thread):
         for well in self.well_names:
             save_path = path.join(self.home_dir, well)
             print(well)
-            w = Well(self.controllers, well, 600, outdir=save_path)
+            w = Well(self.controllers, well, 1000, outdir=save_path)
             w.done_time = datetime.now()
             wells.append(w)
         print("Made wells")
@@ -83,7 +83,7 @@ class Manager(threading.Thread):
         for well in self.well_names:
             save_path = path.join(self.home_dir, well)
             print(well)
-            w = Well(self.controllers, well, 600, outdir=save_path)
+            w = Well(self.controllers, well, 1000, outdir=save_path)
             w.done_time = datetime.now()
             wells.append(w)
         print("Made wells")
@@ -148,10 +148,10 @@ class Well(object):
             print(self.history[-1])
             #sys.stdout.flush()
 
-    def incubate(self, fluid, minutes, vol=200, fill_wait=60, dispense_wait=60):
+    def incubate(self, fluid, minutes, vol=250, fill_wait=90, dispense_wait=30, aspir_wait=30):
         self.aspirate(wait=30)
         self.fill(fluid, vol/2, fill_wait=fill_wait, dispense_wait=dispense_wait)
-        self.aspirate(wait=30)
+        self.aspirate(wait=aspir_wait)
         self.fill(fluid, vol, fill_wait=fill_wait, dispense_wait=dispense_wait)
         td = timedelta(minutes=minutes)
         return datetime.now() + td
