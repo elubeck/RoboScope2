@@ -18,9 +18,6 @@ class Microscope:
         self.calpos = calpos
         self.pipetSpeed = pipetSpeed
         self.robot = rob.Robot(robcom,115200,mmcore=self.core,syringe=syringe) #initializes the robot and homes it.
-        self.gui.setStagePosition(0.1)
-        self.core.waitForDevice("ManualFocus")
-        self.setStageXY(homepos) #moves the stage to the home position
         self.layout= plate_layout
         self.framecount = 0
         self.acqname = acqname
@@ -121,16 +118,16 @@ class Microscope:
             self.robotQuickWash()
             
     def sync(self):
-        self.core.waitForDevice("XYStage")
-        self.core.waitForDevice("ManualFocus")
         self.robot.sync()
         
     def needleCal(self):
-        self.gui.setStagePosition(0.1)
-        self.core.waitForDevice("ManualFocus")
-        self.setStageXY(self.homepos)
         self.sync()
-        self.robot.needleCal(self.calpos,self.homepos)
+        x0, y0 = self.homepos
+        x1, y1 = self.getStageXY()
+        calx = self.calpos[0] - (x0 - x1)
+        caly = self.calpos[1] - (y0 - y1)
+        self.ncalpos = [calx, caly, self.calpos[2], self.calpos[3]]
+        self.robot.needleCal(self.ncalpos,self.getStageXY())
         self.robot.gotoTop(self.layout[1])
         
     def wait(self,time):
