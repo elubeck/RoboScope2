@@ -5,7 +5,7 @@ class Microscope:
     pipetSpeed = 2400
     
     def __init__(self,gui,core,plate_layout=[rob.Microwell(rob.PLATEDEF_384WELL),rob.Microwell(rob.PLATEDEF_VIALRACK)], \
-                 homepos = [20.000,10.000],outdir = "C:\\",acqname="Test",logdir= "\\acquisitions\\logs",robcom='COM7',calpos = [10,24,18,None], \
+                 homepos = [20.000,10.000],outdir = "C:\\",acqname="Test",logdir= "\\acquisitions\\logs",robcom='COM7',calpos = [10,24,18+5,None], \
                  syringe = True,offset = [8.65, 23.4, 15.0, 0],pipetSpeed = 2400):
         """this class defines the microscope+robot functional unit. The microscope class controls the robot class.
         This class also contains the experiment protocol that the system is going to do. That will be fed in by a text file"""
