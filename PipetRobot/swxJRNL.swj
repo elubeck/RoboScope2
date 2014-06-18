@@ -1,0 +1,20 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 04/24/14 by Andrey
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+Set Part = swApp.OpenDoc6("C:\Users\Andrey\SkyDrive\solidworks\PipetRobot\zsyringemount.sldprt", 1, 0, "", longstatus, longwarnings)
+' MSGBOX
+'  C:\Users\Andrey\SkyDrive\solidworks\PipetRobot\zsyringemount.sldprt is being used by Andrey.  Do you want to open a copy?
+
+swApp.ExitApp
+End Sub
