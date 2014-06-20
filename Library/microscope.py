@@ -72,7 +72,8 @@ class Microscope:
         self.robot.gotoWell(self.layout[carrier],well, feedrate=1500)
         self.robot.gotoBottom(self.layout[carrier])
         self.robot.aspirate(volume,pipetrate)
-        self.robot.wait(wait)
+        self.sync()
+        self.wait(wait)
         self.robot.gotoTop(self.layout[carrier])
         
     def dispense(self,well,carrier,volume,expell = False,pipetrate = 2400,wait = 3):
@@ -83,7 +84,8 @@ class Microscope:
         self.robot.dispense(volume,pipetrate)
         if expell:
             self.robot.emptySyringe(feedrate = self.pipetSpeed)
-        self.robot.wait(wait)
+        self.sync()
+        self.wait(wait)
         self.robot.gotoTop(self.layout[carrier])
         if expell:
             #self.robot.aspirate(100,pipetrate) #6-6-14 11:34am
@@ -124,9 +126,9 @@ class Microscope:
         self.sync()
         x0, y0 = self.homepos
         x1, y1 = self.getStageXY()
-        calx = self.calpos[0] - (x0 - x1)
-        caly = self.calpos[1] - (y0 - y1)
-        self.ncalpos = [calx, caly, self.calpos[2], self.calpos[3]]
+        calx = self.calpos[0] - (x0 - x1) + 6.216
+        caly = self.calpos[1] - (y0 - y1) - 1.2
+        self.ncalpos = [calx, caly, self.calpos[2]+5, self.calpos[3]]
         self.robot.needleCal(self.ncalpos,self.getStageXY())
         self.robot.gotoTop(self.layout[1])
         

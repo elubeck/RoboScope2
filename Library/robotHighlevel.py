@@ -8,7 +8,7 @@ import copy as c
 
 #from stageCalibration import *
 
-class MMSerial:
+class MMSerial(object):
 
     def write(self, code):
         self.core.setSerialPortCommand("Robot", code, "\n")
@@ -32,7 +32,7 @@ def dc(something):
     """wrapper for deep copy"""
     return c.deepcopy(something)
 
-class Robot:
+class Robot(object):
     def __init__(self,serialPort,baudrate,timeout=200, mmcore=False,home=True,syringe = True,staticOffset=(0.0,0.0)):
         """opens a serial channel and begins communication"""
         if mmcore is not False:
@@ -118,7 +118,6 @@ class Robot:
             volume = 0
         else:
             amount_mm = volume/self.uLpermm
-            print(volume, amount_mm, self.uLpermm)
             self.arbGcode("G1 E{0:.5f} F{1}".format(-amount_mm,feedrate))#dreymark
             self.syringeVolume = volume
                     
@@ -138,7 +137,7 @@ class Robot:
         self.enablePump()
         self.gotoWell(washwells,wellA)
         self.gotoBottom(washwells)
-        self.wait(10)
+        self.wait(7)
         if(wellB is not None):
             self.gotoWell(washwells,wellB)
             self.gotoBottom(washwells)
@@ -172,7 +171,6 @@ class Robot:
         if(feedrate != 0):
             xyz+=dimorder[4].format(feedrate)
         gcode = gcode.format(xyz)
-        #print "SENDING: {}".format(gcode)
         self.robolink.write(gcode)
         self.readComm()
     
@@ -203,7 +201,6 @@ class Robot:
         cspl = coords.split()
         cspl = cspl[:cspl.index('Count')]#+1:]
         for words in cspl:
-            #print words
             if words[0] == "X":
                 outcoord[0] = float(words[2:])
             if words[0] == "Y":
@@ -224,9 +221,8 @@ class Robot:
         for eind in range(len(espl)):
             if("TRIGGERED" in espl[eind]):
                 outlist[eind] = 1
-        #print "endstops!"
-        #print outlist
         return outlist
+
     def needleCal(self,initcoords,stagecoords):
         """specify the coordinate the target *should* be at. The robot then homes to
         the bottom middle of the circular recess, and then sets static offset based on stagecoords
@@ -281,7 +277,6 @@ class Robot:
         curpos = startcoords
         prevpos = startcoords
         hitsomething = False
-        #print "moving fast!"
         for move in movelist: #move forward until we touch something
             self.makeMove(move,feed)
             self.wait(wait)
@@ -292,7 +287,6 @@ class Robot:
             for end in range(len(endstopcheck)):
                 if(endstopcheck[end] and endstop[end]):
                     hitsomething=True
-                    #print "we hit something!"
                     break
             if(hitsomething):
                 break
@@ -303,7 +297,6 @@ class Robot:
         newmovelist = movelist[:movelist.index(curpos)][::-1] #reversed list, starting from the hit pos
         notouch = startcoords
         countoff  = 5
-        #print "move back!"
         for move in newmovelist:
             self.makeMove(move,feed)
             self.wait(wait)
@@ -320,7 +313,6 @@ class Robot:
                     break
         #move again, with a smaller step
         lastmovelist = self.intermediatePoints(notouch,endcoords,0.05)
-        #print "final approach!"
         #hitsomething = False
         for move in lastmovelist: #move forward until we touch something
             self.makeMove(move,feed)
@@ -358,6 +350,7 @@ class Robot:
         
     def sync(self):
         self.arbGcode("M400")
+
     def intermediatePoints(self,startcoords,endcoords,step):
         """makes a list of intermediate points between start and end with a distance of step"""
         stepx = endcoords[0]-startcoords[0]
@@ -367,16 +360,13 @@ class Robot:
         dx, dy, dz = self.sph2cart(step,theta,phi)
         numberofsteps = int(r/step) #the number of steps we need to take!
         clist = [startcoords]
-        #print "theta"+str(theta)
-        #print "phi"+str(phi)
-        
+
         for i in range(numberofsteps):
             newx = "%.8G"%(clist[-1][0]+dx)
             newy = "%.8G"%(clist[-1][1]+dy)
             newz = "%.8G"%(clist[-1][2]+dz)
             newc = [float(newx),float(newy) ,float(newz) ,endcoords[3]]
             clist+=[newc]
-        #print clist
         return clist
     
     def cart2sph(self,x,y,z):
@@ -413,12 +403,13 @@ class Robot:
             self.makeMove(scanpoint,feedrate=feed)
             retpoints+=[retpoint]
         return retpoints
+
     def turnOff(self):
         self.robolink.close()
     
     
     
-class Microwell:
+class Microwell(object):
     def __init__(self,platedef,offset = [0,0]):
         """plate definition: [<distance in X between wells>,
         <distance in Y between wells>, <X pos of first well>,
@@ -435,6 +426,7 @@ class Microwell:
         self.offsetX = offset[0]
         self.offsetY = offset[1]
         self.zposMIDDLE = platedef[8]
+
     def wellPos(self,well,microscope=False):
         """well is a string, like "A1" or "G7"
         ===> Y
@@ -463,20 +455,26 @@ class Microwell:
         self.offsetY = offset[1]
     
 PLATEDEF_384WELL=[4.5,4.5, #spacing between wells; x and y
-                  8.5114,72.69825,20, 8.0, #position of A1, X, Y, top and bottom
-                  24,16,15,0] #number of wells in X and Y
+                  8.5114,72.69825,
+                  20+5+5.7, 8.0+5+5.7, #position of A1, X, Y, top and bottom
+                  24,16,
+                  15+5.7,0] #number of wells in X and Y, z middle position
 PLATEDEF_VIALRACK =[13.94,16.09,
-                    114.15,38.8,49,30,
-                    4,2,30,0]
-PLATEDEF_VIALRACK =[13.94,16.09,
-                    114.15,38.8,49,25
-                    ,4,2,30,0]
+                    114.15,38.8,
+                    49+5+5.7,25+5+5.7,
+                    4,2,
+                    30+5+5.7,0]
 
+PLATEDEF_VIALRACK =[13.94,16.09, #Changed this to fix x offset
+                    112.15,38.8,
+                    49+5+5.7,25+5+5.7,
+                    4,2,
+                    30+5+5.7,0]
 PLATEDEF_8WELL=[11.3, 10.7,
                 42.832, 44.584,
-                24, 4,
+                24+5+5.7, 3.5+5+5.75,
                 4, 2, 
-                15, 0]
+                15+5+5.7-3, 0]
 #roboffset = [4.98,87.055,2.7,0]
 #robA1 = [213.5,82,7,None]
 #this is the distance from the metal recess to A1 on the plate
@@ -492,7 +490,6 @@ if __name__ == '__main__':
     vialrack = Microwell(PLATEDEF_VIALRACK)
     #pipetBot.aspirate(300)
     #pipetBot.dispense(300)
-    #print pipetBot.needleCal([0,0,0,0])
     #pipetBot.cleanSyringe(vialrack)
     #pipetBot.wait(2)
     #pipetBot.gotoWell(vialrack,'A4')
