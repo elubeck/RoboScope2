@@ -126,9 +126,9 @@ class Microscope:
         self.sync()
         x0, y0 = self.homepos
         x1, y1 = self.getStageXY()
-        calx = self.calpos[0] - (x0 - x1) + 6.216
+        calx = self.calpos[0] - (x0 - x1) + 5
         caly = self.calpos[1] - (y0 - y1) - 1.2
-        self.ncalpos = [calx, caly, self.calpos[2]+5, self.calpos[3]]
+        self.ncalpos = [calx, caly, self.calpos[2], self.calpos[3]]
         self.robot.needleCal(self.ncalpos,self.getStageXY())
         self.robot.gotoTop(self.layout[1])
         

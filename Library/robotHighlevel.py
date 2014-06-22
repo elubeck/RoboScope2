@@ -475,6 +475,31 @@ PLATEDEF_8WELL=[11.3, 10.7,
                 24+5+5.7, 3.5+5+5.75,
                 4, 2, 
                 15+5+5.7-3, 0]
+
+
+PLATEDEF_384WELL=[4.5,4.5, #spacing between wells; x and y
+                  8.5114,72.69825,
+                  20+5, 8.0+5, #position of A1, X, Y, top and bottom
+                  24,16,
+                  15,0] #number of wells in X and Y, z middle position
+PLATEDEF_VIALRACK =[13.94,16.09,
+                    114.15,38.8,
+                    49+5,25+5,
+                    4,2,
+                    30+5,0]
+
+PLATEDEF_VIALRACK =[13.94,16.09, #Changed this to fix x offset
+                    112.15,38.8,
+                    49+5,25+5-8,
+                    4,2,
+                    30+5,0]
+PLATEDEF_8WELL=[11.3, 10.7,
+                42.832, 44.584,
+                24+5, 3.5+5.50,
+                4, 2,
+                15+5-3, 0]
+
+
 #roboffset = [4.98,87.055,2.7,0]
 #robA1 = [213.5,82,7,None]
 #this is the distance from the metal recess to A1 on the plate

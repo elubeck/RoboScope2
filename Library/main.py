@@ -35,40 +35,6 @@ def frange(start, end=None, inc=None):
 
 
 class Manager(threading.Thread):
-    def main(self):
-        """
-        This is a linear event loop for the program.  It'll waste lots of time, but it's an initial demo of the software.
-        :return:
-        """
-        wells = []
-        for well in self.well_names:
-            save_path = path.join(self.home_dir, well)
-            w = Well(self.controllers, well, 1000, outdir=save_path)
-            w.done_time = datetime.now()
-            wells.append(w)
-        for hyb, hyb_tube in self.hybridizations.iteritems():
-            for activity in self.activities:
-                for well in wells:
-                    print("%s doing %s %s %s" % (datetime.now(), hyb, activity, well))
-                    while well.done_time > datetime.now():
-                        time.sleep(10)
-                    if activity == 'hyb':
-                        continue
-                        well.done_time = well.incubate(hyb_tube, 120)
-                    if activity == 'rinse':
-                        well.wash(self.ssc_vial, 2)
-                        well.done_time = datetime.now()
-                    if activity == 'stringent wash':
-                        well.done_time = well.incubate(self.formamide_vial, 30)
-                    if activity == 'wash':
-                        well.wash(self.ssc_vial, 5)
-                    if activity == 'antibleach':
-                        well.done_time = well.incubate(self.antibleach_vial, 5)
-                    if activity == 'image':
-                        well.image()
-                        well.done_time = datetime.now()
-                    if activity == 'strip':
-                        well.done_time = well.incubate(self.enzyme_vial, 60)
 
     def maintest(self):
         """
@@ -81,9 +47,13 @@ class Manager(threading.Thread):
             w = Well(self.controllers, well, 1000, positions=pos, outdir=save_path)
             w.done_time = datetime.now()
             wells.append(w)
+        home_time = datetime.now() #+ timedelta(minutes=60)
         for hyb, hyb_tube in self.hybridizations:
             for activity in self.activities:
                 for well in wells:
+                    if datetime.now() > home_time: #home syringe every hour
+                        self.controllers['scope'].robot.homeNow(syringe=False)
+                        home_time = datetime.now() + timedelta(minutes=240)
                     n_cycles = 0
                     while True:
                         try:
@@ -91,7 +61,7 @@ class Manager(threading.Thread):
                             while well.done_time > datetime.now():
                                 time.sleep(10)
                             if activity == 'hyb':
-                                well.done_time = well.incubate(hyb_tube, 1, disp_dvol=300, fill_wait=90,
+                                well.done_time = well.incubate(hyb_tube, 120, disp_dvol=300, fill_wait=90,
                                                                dispense_wait=30, aspir_wait=60)
                             elif activity == 'rinse':
                                 well.wash(self.ssc_vial, 2)
@@ -108,10 +78,11 @@ class Manager(threading.Thread):
                                 well.image()
                                 well.done_time = datetime.now()
                             elif activity == 'strip':
-                                well.done_time = well.incubate(self.enzyme_vial, 1, fill_wait=30,
+                                well.done_time = well.incubate(self.enzyme_vial, 30, fill_wait=30,
                                                                dispense_wait=15, aspir_wait=15)
                             else:
                                 raise Exception("Activity %s not recognized" % activity)
+                            break
                         except:
                             print("Failed %s on try %i" % (activity, n_cycles))
                             if n_cycles>2:
@@ -234,7 +205,7 @@ class Well(object):
 
 
     def __init__(self, controllers, position, max_vol, outdir, positions=None,
-                 channels=(("635", 1000), ("545", 1000), ("390", 1000)), z_step=0.5):
+                 channels=(("635", 1000), ("545", 1000), ("475", 1000)), z_step=0.5):
         self.scope = controllers['scope']
         self.gui = controllers['gui']
         self.position = position
@@ -291,6 +262,7 @@ def pierce_well(well_loc, scope):
     for well, plate in well_loc:
         scope.moveRobot(well, plate)
         scope.robot.gotoBottom(scope.layout[plate])
+        scope.robot.gotoTop(scope.layout[plate])
 
 
 if __name__ == "__main__":
