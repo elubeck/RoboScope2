@@ -75,6 +75,7 @@ class Microscope:
         self.sync()
         self.wait(wait)
         self.robot.gotoTop(self.layout[carrier])
+        self.robot.aspirate(50, pipetrate) # Added to remove hanging droplet problem
         
     def dispense(self,well,carrier,volume,expell = False,pipetrate = 2400,wait = 3):
         curpos = self.getStageXY()
