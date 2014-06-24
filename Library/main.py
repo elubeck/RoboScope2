@@ -61,7 +61,8 @@ class Manager(threading.Thread):
                             while well.done_time > datetime.now():
                                 time.sleep(10)
                             if activity == 'hyb':
-                                well.done_time = well.incubate(hyb_tube, 120, disp_dvol=300, fill_wait=90,
+                                well.done_time = well.incubate(hyb_tube, self.hyb_time, vol=250,
+                                                               disp_dvol=300, fill_wait=90,
                                                                dispense_wait=30, aspir_wait=60)
                             elif activity == 'rinse':
                                 well.wash(self.ssc_vial, 2)
@@ -70,7 +71,7 @@ class Manager(threading.Thread):
                                 well.done_time = well.incubate(self.formamide_vial, 1, fill_wait=30,
                                                                dispense_wait=15, aspir_wait=15)
                             elif activity == 'wash':
-                                well.wash(self.ssc_vial, 5)
+                                well.wash(self.ssc_vial, 7)
                             elif activity == 'antibleach':
                                 well.done_time = well.incubate(self.antibleach_vial, 1, fill_wait=30,
                                                                dispense_wait=30, aspir_wait=30)
@@ -78,7 +79,8 @@ class Manager(threading.Thread):
                                 well.image()
                                 well.done_time = datetime.now()
                             elif activity == 'strip':
-                                well.done_time = well.incubate(self.enzyme_vial, 30, fill_wait=30,
+                                well.done_time = well.incubate(self.enzyme_vial, self.strip_time, vol=200,
+                                                               fill_wait=30,
                                                                dispense_wait=15, aspir_wait=15)
                             else:
                                 raise Exception("Activity %s not recognized" % activity)
@@ -88,7 +90,7 @@ class Manager(threading.Thread):
                             if n_cycles>2:
                                 raise Exception("Failed %s on try %i" % (activity, n_cycles))
                             n_cycles+=1
-                print("#"*10 +"Done a cycle" + "#"*10)
+            print("#"*10 +"Done a cycle" + "#"*10)
         print("Done")
 
 
@@ -103,7 +105,7 @@ class Manager(threading.Thread):
     def __init__(self, controllers, home_dir, bucket, well_names, positions,
                  hybridizations=(('i1', 'A1'), ('i1', 'A1')),
                  activities=('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
-                 formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5'):
+                 formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5', hyb_time=45, strip_time=30):
         threading.Thread.__init__(self)
         self.controllers = controllers
         self.home_dir = home_dir
@@ -116,14 +118,18 @@ class Manager(threading.Thread):
         self.antibleach_vial = antibleach_vial
         self.enzyme_vial = enzyme_vial
         self.poistions = positions
+        self.hyb_time = hyb_time
+        self.strip_time = strip_time
 
 
 class Well(object):
     def log(self, string, debug=True):
-        self.history.append(str(datetime.now()) + "\t%s\tWell: %s" % (string, self.position))
+        robot_hist = str(datetime.now()) + "\t%s\tWell: %s" % (string, self.position)
+        self.history.append(robot_hist)
+        with open('robolog.txt', 'a') as f:
+            f.write(robot_hist + "\n")
         if debug:
             print(self.history[-1])
-            # sys.stdout.flush()
 
     def incubate(self, fluid, minutes, vol=250, fill_wait=90, dispense_wait=30, aspir_wait=30, disp_dvol=100):
         self.aspirate(wait=30)
@@ -134,6 +140,7 @@ class Well(object):
         return datetime.now() + td
 
     def wash(self, fluid, n_times=1):
+        self.log("Washing Well")
         for t in range(n_times):
             wait_t=30
             if t == 0: #if first wash
@@ -149,13 +156,13 @@ class Well(object):
         :param wait: Time to wait after pipetting
         :return:
         """
+        self.log("Aspirating.  Volume=%s, Dead Volume=%s, Wait=%s" % (self.max_vol, dead_volume, wait))
         self.scope.aspirate(self.position, 0, self.max_vol, dead_volume, wait=wait)
         self.vol = self.vol - self.max_vol
         if self.vol < 0:
             self.vol = 0
-        self.log("Aspirating.  Volume=%s, Dead Volume=%s, Wait=%s" % (self.max_vol, dead_volume, wait))
-        self.scope.robotQuickWash()
         self.log("Washing Needle")
+        self.scope.robotQuickWash()
 
     def fill(self, fluid_well, volume, dead_volume=100, fill_wait=10, dispense_wait=10):
         """
@@ -166,11 +173,11 @@ class Well(object):
         :param dispense_wait: Time to wait after dispensing needle
         :return:
         """
-        self.scope.aspirate(fluid_well, 1, volume, dead_volume, wait=fill_wait)
         self.log("Load Needle.  Fluid Well=%s, Volume=%s, Dead Volume=%s, Wait=%s" % (
             fluid_well, volume, dead_volume, fill_wait))
-        self.scope.dispense(self.position, 0, volume, expell=True, wait=dispense_wait)
+        self.scope.aspirate(fluid_well, 1, volume, dead_volume, wait=fill_wait)
         self.log("Fill Well.  Volume=%s, Wait=%s" % (volume, dispense_wait))
+        self.scope.dispense(self.position, 0, volume, expell=True, wait=dispense_wait)
         self.vol = volume
 
     def image(self, ):
@@ -178,6 +185,7 @@ class Well(object):
         Images all positions in self.positions with settings in self.channels
         :return:
         """
+        self.log("Imaging")
         for pn, position in enumerate(self.positions):
             if self.scope.robot.at_bottom:
                 raise Exception("Stage can't move while robot at bottom.")
@@ -202,10 +210,11 @@ class Well(object):
                             if tries >=3:
                                 raise Exception("failed at moving objective")
         self.frame += 1
+        self.log("Done Imaging")
 
 
     def __init__(self, controllers, position, max_vol, outdir, positions=None,
-                 channels=(("635", 1000), ("545", 1000), ("475", 1000)), z_step=0.5):
+                 channels=(("635", 500), ("545", 500), ("475", 500)), z_step=0.5):
         self.scope = controllers['scope']
         self.gui = controllers['gui']
         self.position = position
