@@ -51,9 +51,9 @@ class Manager(threading.Thread):
         for hyb, hyb_tube in self.hybridizations:
             for activity in self.activities:
                 for well in wells:
-                    if datetime.now() > home_time: #home syringe every hour
-                        self.controllers['scope'].robot.homeNow(syringe=False)
-                        home_time = datetime.now() + timedelta(minutes=240)
+                    # if datetime.now() > home_time: #home syringe every hour
+                    #     self.controllers['scope'].robot.homeNow(syringe=False)
+                    #     home_time = datetime.now() + timedelta(minutes=240)
                     n_cycles = 0
                     while True:
                         try:
