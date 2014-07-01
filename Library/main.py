@@ -266,3 +266,28 @@ def pierce_well(well_loc, scope):
         scope.robot.gotoBottom(scope.layout[plate])
         scope.robot.gotoTop(scope.layout[plate])
 
+def parse_positions(file, z_max=20):
+    import json
+    with open(file, 'r') as f:
+        contents = json.load(f)
+    pos_list = []
+    for position in contents['POSITIONS']:
+        pos = {}
+        for device in position['DEVICES']:
+            if device['DEVICE'] == 'XYStage':
+                pos['x'] = device['X']
+                pos['Y'] = device['Y']
+            elif device['DEVICE'] == 'ManualFocus':
+                if z_max is not False:
+                    # This is made for compatability with positionlist using z min/z max
+                    pos['z min'] = device['X']
+                    pos['z max'] = pos['z min'] + 20
+                else:
+                    pos['z'] = device['X']
+            else:
+                raise IOError("Device %s is not recognized" % device['Device'])
+            pos_list.append(pos)
+    return pos_list
+
+
+
