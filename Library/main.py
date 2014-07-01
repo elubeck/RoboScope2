@@ -36,19 +36,34 @@ def frange(start, end=None, inc=None):
 
 class Manager(threading.Thread):
 
+    def log(self, message, debug=True):
+        str = "%s\t%s\n" %(datetime.now(), message)
+        with open('robolog.txt', 'a') as f:
+            f.write(str)
+        if debug:
+            print(str)
+
+    def init_wells(self):
+        wells = []
+        for well, pos in zip(self.well_names, self.positions):
+            save_path = path.join(self.home_dir, well)
+            w = Well(self.controllers, well, 1000, positions=pos, outdir=save_path,
+                     channels=self.channels, z_step=self.z_step)
+            w.done_time = datetime.now()
+            wells.append(w)
+        return wells
+
     def maintest(self):
         """
         This is a linear event loop for the program.  It'll waste lots of time, but it's an initial demo of the software.
         :return:
         """
-        wells = []
-        for well, pos in zip(self.well_names, self.poistions):
-            save_path = path.join(self.home_dir, well)
-            w = Well(self.controllers, well, 1000, positions=pos, outdir=save_path)
-            w.done_time = datetime.now()
-            wells.append(w)
+        wells = self.init_wells()
         home_time = datetime.now() #+ timedelta(minutes=60)
-        for hyb, hyb_tube in self.hybridizations:
+        self.log('\n')
+        self.log("Experiment started.")
+        for n_hyb, (hyb, hyb_tube) in enumerate(self.hybridizations):
+            self.log("Cycle: %s Hyb: %s Hyb Tube: %s" %(n_hyb, hyb, hyb_tube))
             for activity in self.activities:
                 for well in wells:
                     # if datetime.now() > home_time: #home syringe every hour
@@ -57,9 +72,9 @@ class Manager(threading.Thread):
                     n_cycles = 0
                     while True:
                         try:
-                            print("%s doing %s %s %s" % (datetime.now(), hyb, activity, well.position))
                             while well.done_time > datetime.now():
                                 time.sleep(10)
+                            print("%s doing %s %s %s" % (datetime.now(), hyb, activity, well.position))
                             if activity == 'hyb':
                                 well.done_time = well.incubate(hyb_tube, self.hyb_time, vol=250,
                                                                disp_dvol=300, fill_wait=90,
@@ -86,7 +101,8 @@ class Manager(threading.Thread):
                                 raise Exception("Activity %s not recognized" % activity)
                             break
                         except:
-                            print("Failed %s on try %i" % (activity, n_cycles))
+                            self.log("Failed %s on try %i" % (activity, n_cycles))
+                            self.log("%s" % (sys.exc_info()[0]))
                             if n_cycles>2:
                                 raise Exception("Failed %s on try %i" % (activity, n_cycles))
                             n_cycles+=1
@@ -105,7 +121,11 @@ class Manager(threading.Thread):
     def __init__(self, controllers, home_dir, bucket, well_names, positions,
                  hybridizations=(('i1', 'A1'), ('i1', 'A1')),
                  activities=('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
-                 formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5', hyb_time=45, strip_time=30):
+                 formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5', hyb_time=45, strip_time=30,
+                channels=(("635", 250),
+                          ("545", 250),
+                          ("475", 250)),
+                z_step=0.5):
         threading.Thread.__init__(self)
         self.controllers = controllers
         self.home_dir = home_dir
@@ -117,9 +137,11 @@ class Manager(threading.Thread):
         self.formamide_vial = formamide_vial
         self.antibleach_vial = antibleach_vial
         self.enzyme_vial = enzyme_vial
-        self.poistions = positions
+        self.positions = positions
         self.hyb_time = hyb_time
         self.strip_time = strip_time
+        self.channels = channels
+        self.z_step = z_step
 
 
 class Well(object):
@@ -137,6 +159,7 @@ class Well(object):
         self.aspirate(wait=aspir_wait)
         self.fill(fluid, vol, dead_volume=disp_dvol, fill_wait=fill_wait, dispense_wait=dispense_wait)
         td = timedelta(minutes=minutes)
+        self.log("Incubating for %s minutes" %minutes)
         return datetime.now() + td
 
     def wash(self, fluid, n_times=1):
@@ -193,7 +216,7 @@ class Well(object):
             self.scope.gui.setStagePosition(position['z min'])
             self.scope.core.waitForDevice("XYStage")  # something like this, to prevent errors
             self.scope.core.waitForDevice("ManualFocus")
-            for chn, (ch, exp_time) in enumerate(self.channels.iteritems()):
+            for chn, (ch, exp_time) in enumerate(sorted(self.channels.iteritems(), reverse=True)):
                 self.scope.core.setConfig("FilterCube", ch)
                 self.scope.core.waitForConfig("FilterCube", ch)
                 self.scope.core.setExposure(exp_time)
@@ -214,7 +237,9 @@ class Well(object):
 
 
     def __init__(self, controllers, position, max_vol, outdir, positions=None,
-                 channels=(("635", 500), ("545", 500), ("475", 500)), z_step=0.5):
+                 channels=(("635", 250),
+                           #("545", 500),
+                           ("475", 250)), z_step=0.5):
         self.scope = controllers['scope']
         self.gui = controllers['gui']
         self.position = position
@@ -231,41 +256,9 @@ class Well(object):
         self.z_step = z_step
         self.outdir = outdir
         z_max = max([position['z max'] - position['z min'] for position in self.positions])
-        self.acq = self.gui.openAcquisition(self.position, self.outdir, 500, len(self.channels),
+        self.acq = self.gui.openAcquisition(self.position, self.outdir, 1000, len(self.channels),
                                             int(math.ceil(z_max / self.z_step)),
                                             len(self.positions), True, True)
-
-def main(controllers, home_dir, well_names, hybridizations=(('i1', 'A1'), ('i1', 'A1')),
-         activities=('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
-         formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5'):
-    print("Getting ready to thread")
-    bucket = Queue.Queue()
-    thread_obj = Manager(controllers, home_dir, bucket, well_names, hybridizations, activities, ssc_vial,
-                         formamide_vial, antibleach_vial, enzyme_vial)
-    print("Manager Inited")
-    thread_obj.start()
-    print("Manager Started")
-
-    while True:
-        try:
-            exc = bucket.get(block=False)
-        except Queue.Empty:
-            print("Empty queue")
-            pass
-        else:
-            print("Exception Time")
-            exc_type, exc_obj, exc_trace = exc
-            # deal with the exception
-            print exc_type, exc_obj
-            print exc_trace
-
-        thread_obj.join(0.1)
-        if thread_obj.isAlive():
-            continue
-        else:
-            print("Breaking out")
-            break
-    print("Manager complete")
 
 def pierce_well(well_loc, scope):
     for well, plate in well_loc:
@@ -273,33 +266,3 @@ def pierce_well(well_loc, scope):
         scope.robot.gotoBottom(scope.layout[plate])
         scope.robot.gotoTop(scope.layout[plate])
 
-
-if __name__ == "__main__":
-    home_dir = sys.currentWorkingDir
-
-    try:
-        core.unloadDevice("Robot")
-        pass
-    except:
-        pass
-    from microscope import Microscope
-    from robotHighlevel import *
-
-    try:
-        scope = Microscope(gui, core,
-                           plate_layout=[Microwell([11.3, 10.7,
-                                                    42.832, 44.584,
-                                                    24, 4,
-                                                    4, 2,
-                                                    10, 0]),
-                                         Microwell(PLATEDEF_VIALRACK)],
-                           # #offset=[10.4, 25.325, 13.3, 0]
-        )
-        scope.needleCal()
-    except:
-        raise Exception("Can't initialize microscope")
-    controllers = {'scope': scope, 'gui': gui, 'core': core}
-    well_names = 'A1'
-    main(controllers, home_dir, well_names, hybridizations=(('i1', 'A1'), ('i1', 'A1')),
-         activities=('hyb', 'rinse', 'stringent wash', 'wash', 'antibleach', 'image'), ssc_vial='A5',
-         formamide_vial='B5', antibleach_vial='C5', enzyme_vial='D5')
