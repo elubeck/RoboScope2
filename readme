@@ -1,0 +1,11 @@
+Steps for installing
+
+Jython Plugin
+- Jython standalone jar file (v2.7b1 tested) needs to be moved to /plugins/Micro-Manager
+- JythonMMPlugin.jar (tested with jython v.27b1 and Micro-Manager-1.4.17) needs to be moved to /plugins/Micro-Manager
+- jythonconsole directory needs to be moved to /plugins/Micro-Manager
+
+If all this works you should see a jython console in the plugins dropdown in micromanager.  If should open and run just fine.
+In the future this should be replaced by ipython.  It'll make debugging easier.
+
+The firmware should be uploaded
